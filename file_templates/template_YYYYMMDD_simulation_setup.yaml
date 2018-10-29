@@ -1,15 +1,19 @@
-#############################################################################
-# Example file for simulation setup used in SWiFT benchmark.
-# The values provided herein are mere examples.
-# You will need to add and remove parameters.
+###############################################################################
+# IEA Wind Task 31 "WakeBench"
+# Work Package 2
+# Phase 3
+# The SWiFT Benchmarks
 #
-# Instructions:
-# * Populate this file with all relevant parameters of your model.
-# * For each parameter, please include: name, value, unit, and description.
-# * At each time you submit new results to the benchmark, please update This
-#   file to reflect your simulation settings.
-#############################################################################
-
+# Example file for simulation setup
+# Guidelines:
+# - The values provided herein are mere examples
+# - You will need to add and remove parameters
+# - Populate this file with all relevant parameters of your model
+# - For each parameter, please include: name, value, unit, and description
+# - For each time you submit new results to the benchmark, please update this
+#    file to reflect your simulation settings
+# - When relevant, add information about turbine_model and wake_model as well
+###############################################################################
 flow_model:
   name: "SOWFA"
   type: "LES"
@@ -47,6 +51,17 @@ flow_model:
       value: 100
       unit: "-"
       description: "number of points along x"
+  time_information:
+    -
+      name: "dt"
+      value: 0.1
+      unit: "s"
+      description: "wake simulation time step"
+    -
+      name: "T"
+      value: 3600
+      unit: "s"
+      description: "usable simulation time uploaded to benchmark"      
   initial_conditions:
     -
       name: "z_0"
