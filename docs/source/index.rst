@@ -8,6 +8,8 @@ The SWiFT Benchmarks
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Questions? Use `this forum <https://wind.nrel.gov/forum/wind/viewforum.php?f=43>`_.                                                                          |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `Download <../../supporting_material/benchmarks_release.pdf>` the release slides!                                                                            |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. toctree::
    :hidden:
@@ -22,7 +24,7 @@ The SWiFT Benchmarks
    glossary
 
 .. figure:: ../../images/swift_sunrise.jpg
-	:align: center
+  :align: center
 
 *Figure: The DOE SWiFT facility in Lubbock, Texas*
 
@@ -59,12 +61,12 @@ Status
 Each benchmark has 3 phases:
 
 1. Code calibration
-	First, the atmospheric inflow and turbine response are compared to a subset of the measurements.
+    First, the atmospheric inflow and turbine response are compared to a subset of the measurements.
 2. Blind comparison
     - Code-to-code comparison: Simulation results from all participants are cross-compared, to identify potential mistakes in model configuration.
     - Code-to-data comparison: Simulation results from all participants are compared to the measurement data.
 3. Iteration
-	Participants are encouraged to revise their simulations and perform their own comparison with the measurement data.
+    Participants are encouraged to revise their simulations and perform their own comparison with the measurement data.
 
 Each phase will be carried out concurrently for the three benchmarks, according to this :ref:`timeline`.
 

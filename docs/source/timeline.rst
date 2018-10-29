@@ -10,7 +10,7 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +=======================+=======================================================================================+
 | October 29, 2018      | SWiFT Benchmarks Web-Meeting (Kick-Off, #1)                                           |
 +-----------------------+---------------------------------------------------------------------------------------+
-| December 5, 2018      | SWiFT Benchmarks Web-Meeting (#2)                                                     |
+| November 27, 2018     | SWiFT Benchmarks Web-Meeting (#2)                                                     |
 +-----------------------+---------------------------------------------------------------------------------------+
 | December 21, 2018     | Deadline to submit results for Phase 1: Code Calibration (for all benchmarks)         |
 +-----------------------+---------------------------------------------------------------------------------------+

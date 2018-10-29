@@ -45,7 +45,7 @@
 </div>
 <div class="section" id="turbine-model">
 <h2>Turbine Model<a class="headerlink" href="#turbine-model" title="Permalink to this headline">¶</a></h2>
-<p>The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder <a class="reference external" href="https://github.com/pdoubraw/wakebench_swift/tree/master/wt_data/">wt_data</a>. A version number is used to accomodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: <code class="docutils literal notranslate"><span class="pre">v1</span></code>, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.</p>
+<p>The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder <a class="reference external" href="https://github.com/NREL/wakebench_swift/tree/master/wt_data">wt_data</a>. A version number is used to accommodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: <code class="docutils literal notranslate"><span class="pre">v1</span></code>, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.</p>
 <p>The folder  <code class="docutils literal notranslate"><span class="pre">wt_data</span></code> has the following subfolders:</p>
 <ul class="simple">
 <li><cite>FAST7_model</cite>: Contains the simulation model for the program <a class="reference external" href="https://nwtc.nrel.gov/FAST7">FAST7</a>. An <a class="reference external" href="https://openfast.readthedocs.io/">OpenFAST</a> version will be provided in the near future. All the necessary files, including the FAST binary are provided in this folder. The model was developed by C. Kelley and J. White from Sandia National Laboratories. The model was tuned to match the measurements data (see the report mentioned below). Since most measurements were present below rated wind speed, the data are only provided for this range of wind speeds.</li>
@@ -74,8 +74,8 @@
 <p>Benchmark participants who choose not to use FAST or OpenFAST for their simulations are responsible for porting this turbine model to their simulation platform, and encouraged to share their developed model with the community.</p>
 <p>The following publications may be used as references for further details on the model:</p>
 <ul class="simple">
-<li>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018</li>
-<li>Brian R. Resor and Bruce LeBlanc - <em>An Aeroelastic Reference Model for the SWIFT Turbines</em> , Sandia report SAND2014-19136, 2014</li>
+<li>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018 (<a class="reference download internal" href="_downloads/SAND_V27_FAST_Update.pdf" download=""><code class="xref download docutils literal notranslate"><span class="pre">download</span></code></a>)</li>
+<li>Brian R. Resor and Bruce LeBlanc - <em>An Aeroelastic Reference Model for the SWIFT Turbines</em>, Sandia report SAND2014-19136, 2014</li>
 </ul>
 </div>
 <div class="section" id="benchmark-phase-1-code-calibration">

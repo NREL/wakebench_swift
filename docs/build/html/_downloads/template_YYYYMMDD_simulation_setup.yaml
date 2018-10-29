@@ -1,19 +1,22 @@
-#############################################################################
-# Example file for simulation setup used in SWiFT benchmark.
-# The values provided herein are mere examples.
+###############################################################################
+# IEA Wind Task 31 "WakeBench"
+# Work Package 2
+# Phase 3
+# The SWiFT Benchmarks
 #
-# Please populate this file with all relevant parameters of your model
-#############################################################################
-
+# Example file for simulation setup
+# Guidelines:
+# - The values provided herein are mere examples
+# - You will need to add and remove parameters
+# - Populate this file with all relevant parameters of your model
+# - For each parameter, please include: name, value, unit, and description
+# - For each time you submit new results to the benchmark, please update this
+#    file to reflect your simulation settings
+# - When relevant, add information about turbine_model and wake_model as well
+###############################################################################
 flow_model:
   name: "SOWFA"
   type: "LES"
-  turbulence:
-      name: "smagorinski"
-      constants: null
-  wall:
-      name: "moeng"
-      constants: null
   mesh:
     -
       name: "dx"
@@ -48,6 +51,17 @@ flow_model:
       value: 100
       unit: "-"
       description: "number of points along x"
+  time_information:
+    -
+      name: "dt"
+      value: 0.1
+      unit: "s"
+      description: "wake simulation time step"
+    -
+      name: "T"
+      value: 3600
+      unit: "s"
+      description: "usable simulation time uploaded to benchmark"      
   initial_conditions:
     -
       name: "z_0"
@@ -59,21 +73,6 @@ flow_model:
       value: 10.0
       unit: "m s-1"
       description: "reference (hub-height) horizontal wind speed"
-    -
-      name: "TI_{hub}"
-      value: null
-      unit: "-"
-      description: "reference (hub-height) turbulence intensity"
-    -
-      name: "\alpha"
-      value: null
-      unit: "-"
-      description: "mean freestream wind-speed profile power-law exponent"
-    -
-      name: "z_{hub}"
-      value: 32.1
-      unit: "m"
-      description: "reference height above ground (hub-height)"
     -
       name: "\overline{w'\theta'}"
       value: 0.0
@@ -104,19 +103,3 @@ flow_model:
       value: 319.4
       unit: "K"
       description: "potential temperature at the top of inversion layer that caps atmospheric boundary layer"
-turbine_model:
-  blades:
-    name: "ALMA"
-    description: "actuator line model advanced"
-    blades_rotate: true
-    blades_bend: true
-    epsilon: null
-  hub:
-    name: null
-  tower:
-    name: true
-structural_model:
-  name: OpenFAST
-  coupling: >
-    explain here how the models are coupled e.g., full two-way coupling,
-    one-way coupling, look-up tables, etc.

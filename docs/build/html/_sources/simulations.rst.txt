@@ -14,7 +14,7 @@ General Guidelines
 Turbine Model
 -------------
 
-The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder `wt_data <https://github.com/pdoubraw/wakebench_swift/tree/master/wt_data/>`_. A version number is used to accomodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: ``v1``, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.
+The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder `wt_data <https://github.com/NREL/wakebench_swift/tree/master/wt_data>`_. A version number is used to accommodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: ``v1``, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.
 
 The folder  ``wt_data`` has the following subfolders:
 
@@ -35,11 +35,8 @@ Benchmark participants who choose not to use FAST or OpenFAST for their simulati
 
 The following publications may be used as references for further details on the model:
 
-- Christopher L. Kelley and Jonathan White, *An Update to the SWiFT V27 Reference Model*, Sandia report SAND2018-11893, 2018
-- Brian R. Resor and Bruce LeBlanc - *An Aeroelastic Reference Model for the SWIFT Turbines* , Sandia report SAND2014-19136, 2014
-
-
-
+- Christopher L. Kelley and Jonathan White, *An Update to the SWiFT V27 Reference Model*, Sandia report SAND2018-11893, 2018 (:download:`download <../../supporting_material/SAND_V27_FAST_Update.pdf>`)
+- Brian R. Resor and Bruce LeBlanc - *An Aeroelastic Reference Model for the SWIFT Turbines*, Sandia report SAND2014-19136, 2014
 
 .. _phase1:
 

@@ -32,7 +32,7 @@ The turbine operation data used to define the benchmarks are collected with the 
 Wake Measurements
 -----------------
 
-The wind turbine wake is characterized using the Technical University of Denmark (DTU) SpinnerLidar.
+The wind turbine wake is characterized using the Technical University of Denmark (DTU) SpinnerLidar. A model of the scanning geometry will be released in a Sandia report prior to Phase 2 of the SWiFT Benchmarks exercise.
 
 - Line-of-sight velocity (:math:`v_{los}`) is measured in curved surfaces that span a large extent in :math:`y` and :math:`z` but a small extent in :math:`x`. For the purposes of the benchmark, these curved surfaces are therefore assumed to be :math:`y-z` planes at a fixed :math:`x` distance downstream of the rotor.
 - One plane of :math:`v_{los}` is retrieved approximately every 2 seconds.

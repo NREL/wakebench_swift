@@ -1,14 +1,21 @@
-# string = <participant_id>
-# <YYMMDD>
+###############################################################################
+# IEA Wind Task 31 "WakeBench"
+# Work Package 2
+# Phase 3
+# The SWiFT Benchmarks
 #
-# Rotor_Speed [rpm] : wind-turbine rotor speed
-# Power [W]         : generator power
-# Torque [N m]      : generator torque
-# Pitch [deg]       : pitch angle of one blade
-# My [N m]          : out-of-plane moment at root of one blade
-#
-rotor_speed,-999.0,rpm
-power,-999.0,W
-torque,-999.0,Nm
-pitch,-999.0,deg
-moment,NaN,Nm
+# Example file for wind turbine response for steady-state simulation tools
+# Guidelines:
+# - For variable names, please use underscores (e.g., rotor_speed)
+# - For units, please use spaces between each unit (e.g., "N m"), no
+#   spaces between prefixes (e.g., "kW") or between exponents (e.g., "m s-1")
+###############################################################################
+name,value,unit
+rotor_speed,-999.0,"rpm"
+power,-999.0,"W"
+torque,-999.0,"N m"
+pitch,-999.0,"deg"
+blade_root_bending_moment_y,NaN,"N m"
+###############################################################################
+# Please add more lines with all relevant quantities.
+###############################################################################
