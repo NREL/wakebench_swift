@@ -1,12 +1,12 @@
 --------------------------------------------------------------------------------
 ---------------------- FAST INDIVIDUAL BLADE FILE ------------------------------
-Properties generated using NuMAD2PreComp2FASTBlade on 29-May-2014
+SNLV27 - v1 - FAST7
 ---------------------- BLADE PARAMETERS ----------------------------------------
 34               NBlInpSt    - Number of blade input stations (-)
 F                CalcBMode   - Calculate blade mode shapes internally {T: ignore mode shapes from below, F: use mode shapes from below} [CURRENTLY IGNORED] (flag)
-1.5              BldFlDmp(1) - Blade flap mode #1 structural damping in percent of critical (%%)
-1.5              BldFlDmp(2) - Blade flap mode #2 structural damping in percent of critical (%%)
-1.5              BldEdDmp(1) - Blade edge mode #1 structural damping in percent of critical (%%)
+1.5              BldFlDmp(1) - Blade flap mode #1 structural damping in percent of critical (%)
+1.5              BldFlDmp(2) - Blade flap mode #2 structural damping in percent of critical (%)
+1.5              BldEdDmp(1) - Blade edge mode #1 structural damping in percent of critical (%)
 ---------------------- BLADE ADJUSTMENT FACTORS --------------------------------
 1                FlStTunr(1) - Blade flapwise modal stiffness tuner, 1st mode (-)
 1                FlStTunr(2) - Blade flapwise modal stiffness tuner, 2nd mode (-)

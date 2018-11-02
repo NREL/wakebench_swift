@@ -3,7 +3,7 @@
 SNL SWiFT FAST Model Input File, version 2.0 As described in 'An Update to the SWiFT V27 Reference Model,' Kelley and White, 2018.
 Created on 4-October-2018 
 ---------------------- SIMULATION CONTROL --------------------------------------
-False            Echo        - Echo input data to "echo.out" (flag)
+False            Echo        - Echo input data to <RootName>.out (flag)
 1                ADAMSPrep   - ADAMS preprocessor mode {1: Run FAST, 2: use FAST as a preprocessor to create an ADAMS model, 3: do both} (switch)
 1                AnalMode    - Analysis mode {1: Run a time-marching simulation, 2: create a periodic linearized model} (switch)
 3                NumBl       - Number of blades (-)
@@ -182,17 +182,26 @@ True             TabDelim    - Generate a tab-delimited tabular output file. (fl
 2                NBlGages    - Number of blade nodes that have strain gages for output [0 to 5] (-)
 1,2              BldGagNd    - List of blade nodes that have strain gages [1 to BldNodes] (-) [unused if NBlGages=0]
                  OutList     - The next line(s) contains a list of output parameters.  See OutList.txt for a listing of available output channels, (-)
-TSR
-RotCt
-RotCp
-GenPwr
-RotSpeed
 WindVxi
+RotSpeed
 BldPitch1
-BldPitch2
-BldPitch3
 RootMyc1 
 RootMyc2
 RootMyc3
+"TwrBsFxt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
+"TwrBsFyt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
+"TwrBsFzt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
+"TwrBsMxt"                - Side-to-side bending, fore-aft bending, and yaw moments at the base of the tower (platform)
+"TwrBsMyt"                - Side-to-side bending, fore-aft bending, and yaw moments at the base of the tower (platform)
+"TwrBsMzt"                - Side-to-side bending, fore-aft bending, and yaw moments at the base of the tower (platform)
+"TTDspFA"	              - Tower-top / yaw bearing fore-aft (translational) deflection (relative to the undeflected position)	Directed along the xt-axis	(m)
+"TTDspSS"	              - Tower-top / yaw bearing side-to-side (translation) deflection (relative to the undeflected position)	Directed along the yt-axis	(m)
+"TipDxc1"	              - OoPDefl1	Blade 1 out-of-plane tip deflection (relative to the undeflected position)
+"TipDyc1"	              - IPDefl1	Blade 1 in-plane tip deflection (relative to the undeflected position)
+"TipDzc1"	              - TipDzb1	Blade 1 axial tip deflection (relative to the undeflected position)
+TSR
+RotCp
+RotCt
+GenPwr
 END of FAST input file (the word "END" must appear in the first 3 columns of this last line).
 --------------------------------------------------------------------------------
