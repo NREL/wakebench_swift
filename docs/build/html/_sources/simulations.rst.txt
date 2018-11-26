@@ -81,7 +81,7 @@ The inputs with high uncertainty which may need calibration include: roughness l
 
 Once the atmospheric inflow is verified to match the conditions specified within the benchmark (within an acceptable range, determined by the upper and lower bounds of the ensemble mean of each quantity considered), the turbine response is compared to measured values.
 
-The inputs with high uncertainty which may need calibration include: A, B, C. Participants are asked to submit the following results:
+The inputs with high uncertainty which may need calibration include: the aerodynamic model used, the BEM formulation, the generator torque constant. Participants are asked to submit the following results:
 
 - Results for time-stepping simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_wtg_response.txt``
