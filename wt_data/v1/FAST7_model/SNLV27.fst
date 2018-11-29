@@ -199,6 +199,16 @@ RootMyc3
 "TipDxc1"	              - OoPDefl1	Blade 1 out-of-plane tip deflection (relative to the undeflected position)
 "TipDyc1"	              - IPDefl1	Blade 1 in-plane tip deflection (relative to the undeflected position)
 "TipDzc1"	              - TipDzb1	Blade 1 axial tip deflection (relative to the undeflected position)
+LSShftFxa
+LSShftFya
+LSShftFza
+LSShftFys
+LSShftFzs
+LSShftMxa
+LSSTipMya
+LSSTipMza
+LSSTipMys
+LSSTipMzs
 TSR
 RotCp
 RotCt
