@@ -48,7 +48,7 @@ The information below should be used by the benchmark participants to simulate a
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | :math:`\langle \overline{w'\theta_v'} \rangle`    | Kinematic vertical turbulent heat flux     | -0.005     | K m/s | Computed from sonic measurements at :math:`z=10` m                               |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle \theta_v \rangle_0`                | Virtual potential temperature near ground  | 303.7      | K     | Computed from temperature and pressure sensors at :math:`z=2` m                  |
+    | :math:`\langle \theta_v \rangle_0`                | Virtual potential temperature near ground  | 304.2      | K     | Computed from temperature and pressure sensors at :math:`z=2` m                  |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
 
 **Turbine Operation**
