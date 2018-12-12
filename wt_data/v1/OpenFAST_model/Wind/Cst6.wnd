@@ -1,0 +1,5 @@
+!Wind file with step changes in wind speed. 
+!Time  Wind     Wind	Vert.       Horiz.      Vert.       LinV        Gust 
+!      Speed    Dir    Speed       Shear		Shear       Shear       Speed 
+0.00   6.50 0.00 0.00 0.00 0.00 0.00 0.00
+900.00 6.50 0.00 0.00 0.00 0.00 0.00 0.00
