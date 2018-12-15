@@ -1,5 +1,5 @@
 ------- AERODYN v15.00.* BLADE DEFINITION INPUT FILE -------------------------------------
-SNL SWiFT V27 baseline aerodynamic blade input properties
+SNL SWiFT V27 aerodynamic blade input properties, based on planform in report SAND2018-11893 by Chris Kelley, modified by D. Maniaci 12-14-2018.
 ======  Blade Properties =================================================================
          27   NumBlNds           - Number of blade nodes used in the analysis (-)
   BlSpn        BlCrvAC        BlSwpAC        BlCrvAng       BlTwist        BlChord          BlAFID
