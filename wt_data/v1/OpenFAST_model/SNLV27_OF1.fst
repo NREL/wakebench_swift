@@ -1,5 +1,5 @@
-------- FAST v8.16.* INPUT FILE ------------------------------------------------
-SNLV27 - v1 - OpenFAST
+------- OpenFAST1 INPUT FILE ------------------------------------------------
+SNLV27 - v1 - OpenFAST1
 ---------------------- SIMULATION CONTROL --------------------------------------
 False         Echo            - Echo input data to <RootName>.ech (flag)
 "FATAL"         AbortLevel      - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}

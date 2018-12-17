@@ -85,9 +85,9 @@ False         PtfmYDOF    - Platform yaw rotation DOF (flag)
           0   PtfmYIner   - Platform inertia for yaw rotation about the platform CM (kg m^2)
 ---------------------- BLADE ---------------------------------------------------
   21          BldNodes    - Number of blade nodes (per blade) used for analysis (-)
-"SNLV27_Blade.dat"    BldFile(1)  - Name of file containing properties for blade 1 (quoted string)
-"SNLV27_Blade.dat"    BldFile(2)  - Name of file containing properties for blade 2 (quoted string)
-"SNLV27_Blade.dat"    BldFile(3)  - Name of file containing properties for blade 3 (quoted string) [unused for 2 blades]
+"SNLV27_ElastoDyn_Blade.dat"    BldFile(1)  - Name of file containing properties for blade 1 (quoted string)
+"SNLV27_ElastoDyn_Blade.dat"    BldFile(2)  - Name of file containing properties for blade 2 (quoted string)
+"SNLV27_ElastoDyn_Blade.dat"    BldFile(3)  - Name of file containing properties for blade 3 (quoted string) [unused for 2 blades]
 ---------------------- ROTOR-TEETER --------------------------------------------
           0   TeetMod     - Rotor-teeter spring/damper model {0: none, 1: standard, 2: user-defined from routine UserTeet} (switch) [unused for 3 blades]
           0   TeetDmpP    - Rotor-teeter damper position (degrees) [used only for 2 blades and when TeetMod=1]
@@ -107,7 +107,7 @@ False         Furling     - Read in additional model properties for furling turb
 ""            FurlFile    - Name of file containing furling properties (quoted string) [unused when Furling=False]
 ---------------------- TOWER ---------------------------------------------------
          10   TwrNodes    - Number of tower nodes used for analysis (-)
-"SNLV27_Tower.dat"    TwrFile     - Name of file containing tower properties (quoted string)
+"SNLV27_ElastoDyn_Tower.dat"    TwrFile     - Name of file containing tower properties (quoted string)
 ---------------------- OUTPUT --------------------------------------------------
 False          SumPrint    - Print summary data to "<RootName>.sum" (flag)
           2   OutFile     - Switch to determine where output will be placed: {1: in module output file only; 2: in glue code output file only; 3: both} (currently unused)
@@ -115,9 +115,9 @@ True          TabDelim    - Use tab delimiters in text tabular output file? (fla
 "ES10.3E2"    OutFmt      - Format used for text tabular output (except time).  Resulting field should be 10 characters. (quoted string) (currently unused)
           0   TStart      - Time to begin tabular output (s) (currently unused)
           1   DecFact     - Decimation factor for tabular output {1: output every time step} (-) (currently unused)
-          3   NTwGages    - Number of tower nodes that have strain gages for output [0 to 9] (-)
+          0   NTwGages    - Number of tower nodes that have strain gages for output [0 to 9] (-)
           1,          4,          9    TwrGagNd    - List of tower nodes that have strain gages [1 to TwrNodes] (-) [unused if NTwGages=0]
-          2   NBlGages    - Number of blade nodes that have strain gages for output [0 to 9] (-)
+          0   NBlGages    - Number of blade nodes that have strain gages for output [0 to 9] (-)
           1,          2    BldGagNd    - List of blade nodes that have strain gages [1 to BldNodes] (-) [unused if NBlGages=0]
               OutList     - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
 RotSpeed                   
