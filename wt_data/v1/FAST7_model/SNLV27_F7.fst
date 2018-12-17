@@ -70,7 +70,7 @@ False            CompNoise   - Compute aerodynamic noise (flag)
 0                IPDefl      - Initial in-plane blade-tip deflection, (meters)
 0                TeetDefl    - Initial or fixed teeter angle (degrees) [unused for 3 blades]
 0                Azimuth     - Initial azimuth angle for blade 1 (degrees)
-43.81            RotSpeed    - Initial or fixed rotor speed (rpm)
+33.8            RotSpeed    - Initial or fixed rotor speed (rpm)
 0                NacYaw      - Initial or fixed nacelle-yaw angle (degrees)
 0                TTDspFA     - Initial fore-aft tower-top displacement (meters)
 0                TTDspSS     - Initial side-to-side tower-top displacement (meters)
@@ -132,7 +132,7 @@ False            GBRevers    - Gearbox reversal {T: if rotor and generator rotat
 ""               PtfmFile    - Name of file containing platform properties (quoted string) [unused when PtfmModel=0]
 ---------------------- TOWER ---------------------------------------------------
 10               TwrNodes    - Number of tower nodes used for analysis (-)
-"SNLV27_Tower.dat" TwrFile - Name of file containing tower properties (quoted string)
+"SNLV27_ElastoDyn_Tower_F7.dat" TwrFile - Name of file containing tower properties (quoted string)
 ---------------------- NACELLE-YAW ---------------------------------------------
 0                YawSpr      - Nacelle-yaw spring constant (N-m/rad)
 0                YawDamp     - Nacelle-yaw damping constant (N-m/rad/s)
@@ -154,11 +154,11 @@ False            Furling     - Read in additional model properties for furling t
 0                TBDrConD    - Tip-brake drag constant during fully-deployed operation, Cd*Area (m^2)
 0                TpBrDT      - Time for tip-brake to reach full deployment once released (sec)
 ---------------------- BLADE ---------------------------------------------------
-"SNLV27_Blade.dat" BldFile(1) - Name of file containing properties for blade 1 (quoted string)
-"SNLV27_Blade.dat" BldFile(2) - Name of file containing properties for blade 2 (quoted string)
-"SNLV27_Blade.dat" BldFile(3) - Name of file containing properties for blade 3 (quoted string) [unused for 2 blades]
+"SNLV27_ElastoDyn_Blade_F7.dat" BldFile(1) - Name of file containing properties for blade 1 (quoted string)
+"SNLV27_ElastoDyn_Blade_F7.dat" BldFile(2) - Name of file containing properties for blade 2 (quoted string)
+"SNLV27_ElastoDyn_Blade_F7.dat" BldFile(3) - Name of file containing properties for blade 3 (quoted string) [unused for 2 blades]
 ---------------------- AERODYN -------------------------------------------------
-"SNLV27_AeroDyn.dat"  ADFile     - Name of file containing AeroDyn input parameters (quoted string)
+"SNLV27_AeroDyn14.dat"  ADFile     - Name of file containing AeroDyn input parameters (quoted string)
 ---------------------- NOISE ---------------------------------------------------
 ""               NoiseFile   - Name of file containing aerodynamic noise input parameters (quoted string) [used only when CompNoise=True]
 ---------------------- ADAMS ---------------------------------------------------
@@ -166,8 +166,8 @@ False            Furling     - Read in additional model properties for furling t
 ---------------------- LINEARIZATION CONTROL -----------------------------------
 "NaN" LinFile    - Name of file containing FAST linearazation parameters (quoted string) [unused when AnalMode=1]
 ---------------------- OUTPUT --------------------------------------------------
-True             SumPrint    - Print summary data to "<RootName>.fsm" (flag)
-3                OutFileFmt  - Format for tabular (time-marching) output file(s) (1: text file [<RootName>.out], 2: binary file [<RootName>.outb], 3: both) (switch)
+False             SumPrint    - Print summary data to "<RootName>.fsm" (flag)
+2                OutFileFmt  - Format for tabular (time-marching) output file(s) (1: text file [<RootName>.out], 2: binary file [<RootName>.outb], 3: both) (switch)
 True             TabDelim    - Generate a tab-delimited tabular output file. (flag)
 "ES10.3E2"       OutFmt      - Format used for tabular output except time.  Resulting field should be 10 characters. (quoted string)  [not checked for validity!]
 0                TStart      - Time to begin tabular output (s)
