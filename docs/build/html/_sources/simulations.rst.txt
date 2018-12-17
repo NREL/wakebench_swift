@@ -73,6 +73,8 @@ The inputs with high uncertainty which may need calibration include: roughness l
         - ``<YYYYMMDD>`` is the file submission date
         - ``<x>`` is the downstream distance :math:`x` normalized by the rotor diameter :math:`D`
         - File should contain :math:`u,v,w` values, which are four-dimensional: :math:`(n_t \times n_x \times n_y \times n_z)`. For this submission, :math:`n_x=1` (:math:`x=-65~\mathrm{m}\sim-2.5\mathrm{D}`) and the time is given in units of seconds, since the start of the simulation usable time (i.e., not counting spin-up)
+        - The length of the time series to be uploaded is left to the discretion of the participant. We request that the simulation be long enough so that its statistics are converged.
+        - The sampling frequency of the time series to be uploaded should be at least 0.5 Hz.
 - Results for steady-state simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_uvw_<x>D_steady_state.nc``
         - Same as for time-stepping simulation tools, but now :math:`n_t=1`
@@ -88,7 +90,7 @@ The inputs with high uncertainty which may need calibration include: the aerodyn
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response.txt>`
         - ``<YYYYMMDD>`` is the file submission date
         - File shall have one column per variable (including time) and :math:`n_t` rows
-        - Requested variables are time series of rotor speed, power, torque, pitch, and blade-root out-of-plane bending moment
+        - Requested variables are time series of rotor speed, generator power, generator torque, pitch for one of the blades, and blade-root out-of-plane bending moment for one of the blades
 - Results for steady-state simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_wtg_response_steady_state.txt``
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response_steady_state.txt>`
@@ -116,8 +118,8 @@ In both parts of this phase, participants are requested to submit their results 
 
 - Results for time-stepping simulation tools and for steady-state simulation tools:
     - Same as requested in Phase 1 for atmospheric inflow and turbine response
-    - For atmospheric inflow, several netcdf files are uploaded, one for each :math:`x` dsitance (i.e., not only at :math:`x=-2.5` D, but also between :math:`x=1` D and :math:`x=8` D in :math:`1` D increments)
-    - The number of uploaded files for atmospheric inflow will be :math:`9\times n_t` (one per downstream distance and per time)
+    - In addition to atmospheric inflow and turbine response, several netcdf files are uploaded to characterize the modeled flow in the wake: one for each :math:`x` distance (i.e., not only at :math:`x=-2.5` D, but also between :math:`x=1` D and :math:`x=8` D in :math:`1` D increments)
+    - The number of uploaded files for characterization of the flow (inflow and wake) will be 9 (one per downstream distance)
 
 Benchmark Phase 3: Iteration
 ----------------------------

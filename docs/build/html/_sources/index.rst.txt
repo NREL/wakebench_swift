@@ -19,6 +19,7 @@ The SWiFT Benchmarks
    timeline
    measurements
    simulations
+   submissions
    swift_neutral_evolution
    swift_stable_evolution
    swift_unstable_dynamics
