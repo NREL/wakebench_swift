@@ -16,7 +16,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Neutral Benchmark" href="swift_neutral_evolution.html" />
+    <link rel="next" title="Where should I upload my simulation results to?" href="submissions.html" />
     <link rel="prev" title="Measurements" href="measurements.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -128,6 +128,8 @@ For additional quantities of interest, the simulated values are compared to the 
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;x&gt;</span></code> is the downstream distance <span class="math notranslate nohighlight">\(x\)</span> normalized by the rotor diameter <span class="math notranslate nohighlight">\(D\)</span></li>
 <li>File should contain <span class="math notranslate nohighlight">\(u,v,w\)</span> values, which are four-dimensional: <span class="math notranslate nohighlight">\((n_t \times n_x \times n_y \times n_z)\)</span>. For this submission, <span class="math notranslate nohighlight">\(n_x=1\)</span> (<span class="math notranslate nohighlight">\(x=-65~\mathrm{m}\sim-2.5\mathrm{D}\)</span>) and the time is given in units of seconds, since the start of the simulation usable time (i.e., not counting spin-up)</li>
+<li>The length of the time series to be uploaded is left to the discretion of the participant. We request that the simulation be long enough so that its statistics are converged.</li>
+<li>The sampling frequency of the time series to be uploaded should be at least 0.5 Hz.</li>
 </ul>
 </dd>
 </dl>
@@ -165,7 +167,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_wtg_response.txt" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li>File shall have one column per variable (including time) and <span class="math notranslate nohighlight">\(n_t\)</span> rows</li>
-<li>Requested variables are time series of rotor speed, power, torque, pitch, and blade-root out-of-plane bending moment</li>
+<li>Requested variables are time series of rotor speed, generator power, generator torque, pitch for one of the blades, and blade-root out-of-plane bending moment for one of the blades</li>
 </ul>
 </dd>
 </dl>
@@ -217,8 +219,8 @@ For additional quantities of interest, the simulated values are compared to the 
 <dt>Results for time-stepping simulation tools and for steady-state simulation tools:</dt>
 <dd><ul class="first last">
 <li>Same as requested in Phase 1 for atmospheric inflow and turbine response</li>
-<li>For atmospheric inflow, several netcdf files are uploaded, one for each <span class="math notranslate nohighlight">\(x\)</span> dsitance (i.e., not only at <span class="math notranslate nohighlight">\(x=-2.5\)</span> D, but also between <span class="math notranslate nohighlight">\(x=1\)</span> D and <span class="math notranslate nohighlight">\(x=8\)</span> D in <span class="math notranslate nohighlight">\(1\)</span> D increments)</li>
-<li>The number of uploaded files for atmospheric inflow will be <span class="math notranslate nohighlight">\(9\times n_t\)</span> (one per downstream distance and per time)</li>
+<li>In addition to atmospheric inflow and turbine response, several netcdf files are uploaded to characterize the modeled flow in the wake: one for each <span class="math notranslate nohighlight">\(x\)</span> distance (i.e., not only at <span class="math notranslate nohighlight">\(x=-2.5\)</span> D, but also between <span class="math notranslate nohighlight">\(x=1\)</span> D and <span class="math notranslate nohighlight">\(x=8\)</span> D in <span class="math notranslate nohighlight">\(1\)</span> D increments)</li>
+<li>The number of uploaded files for characterization of the flow (inflow and wake) will be 9 (one per downstream distance)</li>
 </ul>
 </dd>
 </dl>
@@ -279,6 +281,8 @@ For additional quantities of interest, the simulated values are compared to the 
 <li class="toctree-l2"><a class="reference internal" href="#benchmark-phase-3-iteration">Benchmark Phase 3: Iteration</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="submissions.html">Where should I upload my simulation results to?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submissions.html#what-should-i-submit">What should I submit?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="swift_neutral_evolution.html">Neutral Benchmark</a></li>
 <li class="toctree-l1"><a class="reference internal" href="swift_stable_evolution.html">Stable Benchmark</a></li>
 <li class="toctree-l1"><a class="reference internal" href="swift_unstable_dynamics.html">Unstable Benchmark</a></li>
@@ -291,7 +295,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="measurements.html" title="previous chapter">Measurements</a></li>
-      <li>Next: <a href="swift_neutral_evolution.html" title="next chapter">Neutral Benchmark</a></li>
+      <li>Next: <a href="submissions.html" title="next chapter">Where should I upload my simulation results to?</a></li>
   </ul></li>
 </ul>
 </div>
