@@ -32,25 +32,25 @@ The information below should be used by the benchmark participants to simulate a
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | Variable                                          | Short Description                          | Value      | Unit  | Remark                                                                           |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle \overline{U}_{hub} \rangle`        | Mean hub-height wind speed                 | 6.5        | m/s   |                                                                                  |
+    | :math:`\langle \overline{U}_{hub} \rangle`        | Mean hub-height wind speed                 | 6.7        | m/s   |                                                                                  |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle \overline{TI}_{hub} \rangle`       | Mean hub-height turbulence intensity       | 12.8       | %     |                                                                                  |
+    | :math:`\langle \overline{TI}_{hub} \rangle`       | Mean hub-height turbulence intensity       | 12.6       | %     |                                                                                  |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle \alpha\rangle`                     | Mean wind-speed profile power-law exponent | 0.18       | \-    |                                                                                  |
+    | :math:`\langle \alpha\rangle`                     | Mean wind-speed profile power-law exponent | 0.14       | \-    |                                                                                  |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | :math:`z_0`                                       | Roughness length                           | 0.005-0.05 | m     | Value obtained from the neutral benchmark measurements                           |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | :math:`z_i`                                       | Atmospheric boundary layer height          | -          | m     | No measurements available                                                        |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle z/L \rangle`                       | Stability parameter                        | -0.102     | \-    | Computed from sonic measurements at :math:`z=10` m                               |
+    | :math:`\langle z/L \rangle`                       | Stability parameter                        | -0.089     | \-    | Computed from sonic measurements at :math:`z=10` m                               |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle u_* \rangle`                       | Friction velocity                          | 0.32       | m/s   | Computed from sonic measurements at :math:`z=10` m                               |
+    | :math:`\langle u_* \rangle`                       | Friction velocity                          | 0.33       | m/s   | Computed from sonic measurements at :math:`z=10` m                               |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | :math:`\langle \overline{w'\theta_v'} \rangle`    | Kinematic vertical turbulent heat flux     | 0.023      | K m/s | Computed from sonic measurements at :math:`z=10` m                               |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
     | :math:`\langle \theta_v \rangle_0`                | Virtual potential temperature near ground  | 290.9      | K     | Computed from temperature and pressure sensors at :math:`z=2` m                  |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
-    | :math:`\langle \rho \rangle_{hub}`                | Air density                                | 1.08       | kg m-3| Total air density, considers dry air and water vapor                             |
+    | :math:`\langle \rho \rangle_{hub}`                | Air density                                | 1.09       | kg m-3| Total air density, considers dry air and water vapor                             |
     +---------------------------------------------------+--------------------------------------------+------------+-------+----------------------------------------------------------------------------------+
 
 **Turbine Operation**

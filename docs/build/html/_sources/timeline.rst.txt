@@ -8,11 +8,11 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | Date                  | Milestone                                                                                                                           |
 +=======================+=====================================================================================================================================+
-| October 29, 2018      | SWiFT Benchmarks Web-Meeting (Kick-Off, #1) :download:`download slides <../../supporting_material/benchmarks_release.pdf>`          |
+| October 29, 2018      | SWiFT Benchmarks Web-Meeting (Kick off, #1) :download:`download slides <../../supporting_material/benchmarks_release.pdf>`          |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | November 27, 2018     | SWiFT Benchmarks Web-Meeting (#2) :download:`download slides <../../supporting_material/benchmarks_meeting2_112718.pdf>`            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| December 18, 2018     | SWiFT Benchmarks Web-Meeting (#3)                                                                                                   |
+| December 18, 2018     | SWiFT Benchmarks Web-Meeting (#3) :download:`download slides <../../supporting_material/benchmarks_meeting3_121818.pdf>`            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | December 21, 2018     | Deadline to submit results for Phase 1: Code Calibration (for all benchmarks)                                                       |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
