@@ -19,7 +19,7 @@ Each file contains
 
 * u [m/s] is the wind velocity vector component along the main wind direction
 * v [m/s] is the wind velocity vector component horizontally normal to the main wind direction
-* w [m/s] is the wind velocity vector component normal to the ground
+* w [m/s] is the wind velocity vector component normal to the ground [positive is upwards]
 
 The provided values of u, v, w have undergone the following processing steps:
 
