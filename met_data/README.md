@@ -10,7 +10,9 @@ For each of the benchmark cases, a number of 10-minute periods was selected base
 The .csv files in this folder represent the hub-height inflow to the wind turbines during each of the 10-minute periods used to define these benchmarks.
 
 The case "swift_neutral_evolution" has six files. Each one is a 10-minute time series.
+
 The case "swift_unstable_dynamics" has five files. Each one is a 10-minute time series.
+
 The case "swift_stable_evolution" has six files. Each one is a 10-minute time series.
 
 Each file contains
@@ -27,16 +29,16 @@ The provided values of u, v, w have undergone the following processing steps:
 * sonic yaw angle is computed and used to rotate the wind vector so that the mean "u" is along the main wind direction
 * rotated u, v, w are saved into .csv files
 
-Note that the velocity vector was not rotated with respect to the sonic pitch angle, which is often done for sites with complex terrain to remove the mean vertical velocity is zero and thereby ensure that the vertical velocity values reported refer to turbulence fluctuations and do not consider the contribution of upslope and downslope flows. This was assumed as an unnecessary step for the SWiFT site where the terrain is fairly flat and homogeneous. Applying a pitch correction would require time series longer than 10 minutes, which are not provided at this point.  
+Note that the velocity vector was not rotated with respect to the sonic pitch angle, which is often done for sites with complex terrain to ensure the mean vertical velocity (over a time window) is zero and thereby also ensure that the vertical velocity values reported refer to turbulence fluctuations and do not consider the contribution of upslope and downslope flows. This was assumed to be an unnecessary step for the SWiFT facility where the terrain is fairly flat and homogeneous. Applying a pitch correction would require time series longer than 10 minutes, which are not provided at this point. 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 IMPORTANT NOTE 
 
 To ensure consistency with the processing that was performed by the benchmark organizers to compute turbulence statistics, we recommend the following approach:
 
-* Within each file, compute 10-minute mean and subtract from time series to obtain perturbations
-* Linearly detrend the time series of perturbations
+* Within each file, compute 10-minute mean and subtract from time series to obtain velocity perturbations
+* Linearly detrend the time series of velocity perturbations
 * Compute whichever turbulence statistics are of interest 
-* Obtain an ensemble average of each statistics by computing the mean of the values obtained for all of the 10-minute periods for a given benchmark 
+* Obtain an "ensemble average" of each statistics by computing the mean of the values obtained for all of the 10-minute periods for a given benchmark. For example, this would be an ensemble mean over six values for the neutral benchmark case.
 * Use this ensemble average to drive your idealized simulation of atmospheric turbulence
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
