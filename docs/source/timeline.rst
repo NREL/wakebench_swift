@@ -14,7 +14,7 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | December 18, 2018     | SWiFT Benchmarks Web-Meeting (#3) :download:`download slides <../../supporting_material/benchmarks_meeting3_121818.pdf>`            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| December 21, 2018     | Deadline to submit results for Phase 1: Code Calibration (for all benchmarks)                                                       |
+| January 18, 2019      | Deadline to submit results for Phase 1: Code Calibration (for all benchmarks)                                                       |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | January 14, 2019      | Release of results from Phase 1: Code Calibration (for all benchmarks)                                                              |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
