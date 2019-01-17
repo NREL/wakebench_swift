@@ -66,7 +66,6 @@ def powerCurvePostProWindStep(outfile,wndfile=None,tWindow=20,ColMap={},WS=None,
     result=result.round(4)
     #result.plot(x='Wind1VelX',y=I)
     #plt.show()
-    print(result)
     return result 
 
 
@@ -138,7 +137,7 @@ def powerCurvePostProWindStep(outfile,wndfile=None,tWindow=20,ColMap={},WS=None,
 # --- Operating conditions 
 # --------------------------------------------------------------------------------{
 # --- Operating Conditions and Rotor Performances
-bF7=True
+bF7=False
 if bF7:
     ColMap = {}        
     ColMap['WS_[m/s]']            = 'WindVxi_[m/s]'
@@ -149,34 +148,42 @@ if bF7:
     ColMap['AeroCt_[-]']          = 'RotCt_[-]'
     ColMap['AeroPower_[kW]']      = 'GenPwr_[kW]'
     ColMap['BldRootFlapM_[kN.m]'] = 'RootMyc1_[kN·m]'
+#     ColMap['AeroThrust_[kN]']     = 'Rt[kN]'
+    ColMap['Thrust_[kN]']         = 'LSShftFxa_[kN]'
 else:
     ColMap = {}        
-    ColMap['WS_[m/s]']        = 'Wind1VelX_[m/s]'
-    ColMap['RotSpeed_[rpm]']  = 'RotSpeed_[rpm]'
-    ColMap['BldPitch_[deg]'] = 'BldPitch1_[deg]'
-    ColMap['TSR_[-]']         = 'RtTSR_[-]'
+    ColMap['WS_[m/s]']            = 'Wind1VelX_[m/s]'
+    ColMap['RotSpeed_[rpm]']      = 'RotSpeed_[rpm]'
+    ColMap['BldPitch_[deg]']      = 'BldPitch1_[deg]'
+    ColMap['TSR_[-]']             = 'RtTSR_[-]'
     ColMap['AeroCp_[-]']          = 'RtAeroCp_[-]'
     ColMap['AeroCt_[-]']          = 'RtAeroCt_[-]'
-    ColMap['AeroPower_[kW]']       = 'GenPwr_[kW]'
-    ColMap['BldRootFlapM_[kN.m]']  = 'RootMyc1_[kN-m]'
+    ColMap['AeroPower_[kW]']      = 'GenPwr_[kW]'
+    ColMap['BldRootFlapM_[kN.m]'] = 'RootMyc1_[kN-m]'
+    ColMap['AeroThrust_[kN]']     = 'RtAeroFxh_[N]' # have to scale it
+    ColMap['Thrust_[kN]']         = 'LSShftFxa_[kN]'
 
 WndFile='FAST7_model/Wind/StepWindSweep_m1mps.wnd'
 if bF7:
     OutFile='FAST7_model/SNLV27_F7.outb'
     suffix='_F7'
 else:
-    OutFile='OpenFAST_model/SNLV27_OpenFAST2.outb'
+    OutFile='OpenFAST_model/SNLV27_OF2.outb'
     suffix='_OF2'
 
 
 # --- Compute mean values as function of wind speed
 result = powerCurvePostProWindStep(OutFile,WndFile,20,ColMap)
+result['AeroThrust_[kN]']= result['AeroThrust_[kN]']/1000
+result['WS_[m/s]']= np.round(result['WS_[m/s]']*10)/10
+print(result)
 
 # --- Export Operating conditions
 ICond=['WS_[m/s]','RotSpeed_[rpm]','BldPitch_[deg]']                             
 result[ICond].to_csv('Raw_model/OperatingConditions'+suffix+'.csv'   ,sep='\t',index=False,float_format='%.4f')
 
 # --- Export rotor performances
+
 result.to_csv       ('Simulated_data/RotorPerformances'+suffix+'.csv',sep='\t',index=False,float_format='%.4f')
 
 
