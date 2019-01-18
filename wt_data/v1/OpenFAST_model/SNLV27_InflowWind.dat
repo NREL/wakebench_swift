@@ -13,7 +13,7 @@ False         Echo           - Echo input data to <RootName>.ech (flag)
          32.1   RefHt          - Reference height for horizontal wind speed      (m)
       0.209   PLexp          - Power law exponent                              (-)
 ================== Parameters for Uniform wind file   [used only for WindType = 2] ============================
-"Wind/StepWindSweep_m1mps.wnd"    Filename       - Filename of time series data for uniform wind field.      (-)
+"Wind/StepWindSweep_m1mps_200.wnd"    Filename       - Filename of time series data for uniform wind field.      (-)
          32.1   RefHt          - Reference height for horizontal wind speed                (m)
          27   RefLength      - Reference length for linear horizontal and vertical sheer (-)
 ================== Parameters for Binary TurbSim Full-Field files   [used only for WindType = 3] ==============
