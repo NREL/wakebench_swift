@@ -122,9 +122,15 @@ True          TabDelim    - Use tab delimiters in text tabular output file? (fla
               OutList     - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
 RotSpeed                   
 BldPitch1                  
+RootMxc1 
+RootMxc2
+RootMxc3
 RootMyc1 
 RootMyc2
 RootMyc3
+RootMzc1 
+RootMzc2
+RootMzc3
 "TwrBsFxt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
 "TwrBsFyt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
 "TwrBsFzt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
