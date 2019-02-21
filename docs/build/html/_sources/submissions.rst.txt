@@ -13,7 +13,7 @@ What should I upload?
 
 Please go to :ref:`Benchmark Simulations <simulations>` for detailed information on files requested. Here is a quick summary:
 
-**Benchmarks Phase 1: Code Calibration**
+**Benchmarks Phase 1: Code Calibration (COMPLETED)**
 
 - Simulation setup (1 file)
 - Atmospheric inflow to the wind turbine (1 file)
@@ -22,12 +22,16 @@ Please go to :ref:`Benchmark Simulations <simulations>` for detailed information
 
 **Benchmarks Phase 2: Blind Comparison**
 
+**Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
+
 - Simulation setup (1 file)
 - Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)
 - Wind turbine response to the inflow (1 file)
 - Total of 11 files
 
 **Benchmarks Phase 3: Iteration**
+
+**Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
 
 - Simulation setup (1 file)
 - Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)

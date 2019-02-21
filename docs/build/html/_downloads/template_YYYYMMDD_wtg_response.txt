@@ -5,23 +5,47 @@
 # The SWiFT Benchmarks
 #
 # Example file for wind turbine response for time-stepping simulation tools
+#
+# Requested variables:
+# - time_[s]
+# - hub_wind_speed_[m_s-1]
+# - rotor_power_[kW]
+# - rotor_torque_[N_m]
+# - rotor_speed_[rpm]
+# - blade_pitch_[deg]
+# - blade_root_flap_moment_[N_m]
+# - blade_root_edge_moment_[N_m]
+# - generator_power_[kW]
+# - generator_torque_[N_m]
+# - thrust_force_[N]
+# - thrust_coefficient_[-]
+#
 # Guidelines:
-# - For variable names, please use underscores (e.g., rotor_speed)
-# - For units, please use spaces between each unit (e.g., "N m"), no
-#   spaces between prefixes (e.g., "kW") or between exponents (e.g., "m s-1")
+# - Ensure your results make sense
+# - Check your units
+# - Use nan for missing values
 ###############################################################################
-time,blade_root_bending_moment_y,pitch,power,rotor_speed,torque
-0.0,-999.0,-999.0,-999.0,-999.0,-999.0
-1.0,-999.0,-999.0,-999.0,-999.0,-999.0
-2.0,-999.0,-999.0,-999.0,-999.0,-999.0
-3.0,-999.0,-999.0,-999.0,-999.0,-999.0
-4.0,-999.0,-999.0,-999.0,-999.0,-999.0
-5.0,-999.0,-999.0,-999.0,-999.0,-999.0
-6.0,-999.0,-999.0,-999.0,-999.0,-999.0
-7.0,-999.0,-999.0,-999.0,-999.0,-999.0
-8.0,-999.0,-999.0,-999.0,-999.0,-999.0
-9.0,-999.0,-999.0,-999.0,-999.0,-999.0
-10.0,-999.0,-999.0,-999.0,-999.0,-999.0
+time_[s],blade_pitch_[deg],blade_root_edge_moment_[N_m],blade_root_flap_moment_[N_m],generator_power_[kW],generator_torque_[N_m],hub_wind_speed_[m_s-1],rotor_power_[kW],rotor_speed_[rpm],rotor_torque_[N_m],thrust_coefficient_[-],thrust_force_[N]
+0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 ###############################################################################
 # Please add more lines so that time series is long enough to provide
 #  converged results.

@@ -24,10 +24,10 @@ The turbine operation data used to define the benchmarks are collected with the 
 
 - Wind speed and direction sensor at the back of the nacelle
 - Yaw heading sensor
-- Turbine power and torque sensor
+- Generator power and torque sensors
 - Blade-pitch sensor
 - Loads measurements
-    - Blade-root out-of-plane bending moment
+    - Four strain gauges at the blade root, which give the flap and edge moments in the blade coordinate system
 
 Wake Measurements
 -----------------

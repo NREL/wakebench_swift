@@ -40,8 +40,8 @@ The following publications may be used as references for further details on the 
 
 .. _phase1:
 
-Benchmark Phase 1: Code Calibration
------------------------------------
+Benchmark Phase 1: Code Calibration (COMPLETED)
+-----------------------------------------------
 
     *The objective of this phase is to provide an opportunity for model calibration before the blind comparison.*
 
@@ -74,7 +74,7 @@ The inputs with high uncertainty which may need calibration include: roughness l
         - ``<x>`` is the downstream distance :math:`x` normalized by the rotor diameter :math:`D`
         - File should contain :math:`u,v,w` values, which are four-dimensional: :math:`(n_t \times n_x \times n_y \times n_z)`. For this submission, :math:`n_x=1` (:math:`x=-65~\mathrm{m}\sim-2.5\mathrm{D}`) and the time is given in units of seconds, since the start of the simulation usable time (i.e., not counting spin-up)
         - The length of the time series to be uploaded is left to the discretion of the participant. We request that the simulation be long enough so that its statistics are converged.
-        - The sampling frequency of the time series to be uploaded should be at least 0.5 Hz.
+        - The sampling frequency of the time series to be uploaded should be at least 1 Hz.
 - Results for steady-state simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_uvw_<x>D_steady_state.nc``
         - Same as for time-stepping simulation tools, but now :math:`n_t=1`
@@ -89,14 +89,14 @@ The inputs with high uncertainty which may need calibration include: the aerodyn
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_wtg_response.txt``
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response.txt>`
         - ``<YYYYMMDD>`` is the file submission date
-        - File shall have one column per variable (including time) and :math:`n_t` rows
-        - Requested variables are time series of rotor speed, generator power, generator torque, pitch for one of the blades, and blade-root out-of-plane bending moment for one of the blades
+        - File shall have one column per variable (including time) and :math:`n_t` rows of data (don't upload the spin up!)
+        - Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torqeu (N m), thrust force integrated over the rotor (N), thrust coefficient (-)
 - Results for steady-state simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_wtg_response_steady_state.txt``
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response_steady_state.txt>`
         - ``<YYYYMMDD>`` is the file submission date
-        - File shall have three columns: variable name, variable value, variable unit
-        - Requested variables are the same as those requested for the time-stepping tools, and their value set to NaN when model cannot simulate them
+        - File shall have two columns: variable name, variable value
+        - Requested variables are the same as those requested for the time-stepping tools, and their value set to NaN (not -999.0) when model cannot simulate them
 
 Benchmark Phase 2: Blind Comparison
 -----------------------------------
@@ -113,18 +113,22 @@ In Phases 2 and 3 of the benchmark, the downstream evolution of the wind-turbine
 
 In both parts of this phase, participants are requested to submit their results for as many of the requested quantities as possible, according to the level of fidelity of their simulation tool. Publicly released python notebooks will show the analysis method used to compute diagnostics from the submitted results. This process is done to ensure consistency of the methodology across groups, and to guarantee repeatability of the analysis. Participants are asked to submit the simulation setup information as well as the simulation results listed below.
 
+**Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
+
 - Simulation setup:
     - Same format as in Phase 1
 
 - Results for time-stepping simulation tools and for steady-state simulation tools:
     - Same as requested in Phase 1 for atmospheric inflow and turbine response
     - In addition to atmospheric inflow and turbine response, several netcdf files are uploaded to characterize the modeled flow in the wake: one for each :math:`x` distance (i.e., not only at :math:`x=-2.5` D, but also between :math:`x=1` D and :math:`x=8` D in :math:`1` D increments)
-    - The number of uploaded files for characterization of the flow (inflow and wake) will be 9 (one per downstream distance)
+    - The number of uploaded files for characterization of the flow (inflow and wake) will be 9 (one per downstream distance). We are keeping these netcdf files separate for each :math:`x` because some participants have really high resolution meshes and adding more than one :math:`x` in there would make for files that are too large to download!
 
 Benchmark Phase 3: Iteration
 ----------------------------
 
     *The objective of this phase is to interrogate results to understand where models work well and where improvements are required.*
+
+**Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
 
 In Phase 3, participants are encouraged to revise their simulations and submit updated results. Results from similar models are grouped accordingly to help identify potential improvements to the code or its use. No calibration of the models can be performed at this stage. The calibration is limited to Phase 1. At each iteration, participants are asked to submit the same files requested in Phase 2 in addition to:
 

@@ -16,11 +16,13 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | January 18, 2019      | Deadline to submit results for Phase 1: Code Calibration (for all benchmarks)                                                       |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| February 3, 2019      | Scheduled release of results from Phase 1: Code Calibration (for all benchmarks)                                                    |
+| February 18, 2019     | Release of results from Phase 1: Code Calibration (for all benchmarks)                                                              |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| February 11, 2019     | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                               |
+| February 26, 2019     | SWiFT Benchmarks Web-Meeting (#4)                                                                                                   |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| February 18, 2019     | Scheduled release of results from Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                            |
+| March 3, 2019         | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                               | 
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| March 11, 2019        | Scheduled release of results from Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | March 11-14, 2019     | Joint Meeting with IEA Wind Task 29 in Boulder, CO                                                                                  |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
