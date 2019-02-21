@@ -5,17 +5,37 @@
 # The SWiFT Benchmarks
 #
 # Example file for wind turbine response for steady-state simulation tools
+#
+# Requested variables:
+# - hub_wind_speed_[m_s-1]
+# - rotor_power_[kW]
+# - rotor_torque_[N_m]
+# - rotor_speed_[rpm]
+# - blade_pitch_[deg]
+# - blade_root_flap_moment_[N_m]
+# - blade_root_edge_moment_[N_m]
+# - generator_power_[kW]
+# - generator_torque_[N_m]
+# - thrust_force_[N]
+# - thrust_coefficient_[-]
+#
 # Guidelines:
-# - For variable names, please use underscores (e.g., rotor_speed)
-# - For units, please use spaces between each unit (e.g., "N m"), no
-#   spaces between prefixes (e.g., "kW") or between exponents (e.g., "m s-1")
+# - Ensure your results make sense
+# - Check your units
+# - Use nan for missing values
 ###############################################################################
-name,value,unit
-rotor_speed,-999.0,"rpm"
-power,-999.0,"W"
-torque,-999.0,"N m"
-pitch,-999.0,"deg"
-blade_root_bending_moment_y,NaN,"N m"
+name,value
+hub_wind_speed_[m_s-1],NaN
+rotor_power_[kW],NaN
+rotor_torque_[N_m],NaN
+rotor_speed_[rpm],NaN
+blade_pitch_[deg],NaN
+blade_root_flap_moment_[N_m],NaN
+blade_root_edge_moment_[N_m],NaN
+generator_power_[kW],NaN
+generator_torque_[N_m],NaN
+thrust_force_[N],NaN
+thrust_coefficient_[-],NaN
 ###############################################################################
-# Please add more lines with all relevant quantities.
+# Please add more lines if you want to provide other variables.
 ###############################################################################
