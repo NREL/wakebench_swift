@@ -20,7 +20,7 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | February 26, 2019     | SWiFT Benchmarks Web-Meeting (#4)                                                                                                   |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| March 3, 2019         | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                               | 
+| March 4, 2019         | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                               | 
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | March 11, 2019        | Scheduled release of results from Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------+
