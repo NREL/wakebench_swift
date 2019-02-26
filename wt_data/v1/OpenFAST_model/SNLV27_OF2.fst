@@ -2,7 +2,7 @@
 SNLV27 - v1 - OpenFAST2
 ---------------------- SIMULATION CONTROL --------------------------------------
 False         Echo            - Echo input data to <RootName>.ech (flag)
-"FATAL"         AbortLevel      - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}
+"FATAL"       AbortLevel      - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}
        2000   TMax            - Total run time (s)
       0.005   DT              - Recommended module time step (s)
           2   InterpOrder     - Interpolation order for input/output time history (-) {1=linear, 2=quadratic}
