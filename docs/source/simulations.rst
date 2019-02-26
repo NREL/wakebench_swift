@@ -16,9 +16,14 @@ Turbine Model
 
 The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder `wt_data <https://github.com/NREL/wakebench_swift/tree/master/wt_data>`_. A version number is used to accommodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: ``v1``, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.
 
-The folder  ``wt_data`` has the following subfolders:
+The folder  ``wt_data/v1/`` has the following subfolders:
 
-- `FAST7_model`: Contains the simulation model for the program `FAST7 <https://nwtc.nrel.gov/FAST7>`_. An `OpenFAST <https://openfast.readthedocs.io/>`_ version will be provided in the near future. All the necessary files, including the FAST binary are provided in this folder. The model was developed by C. Kelley and J. White from Sandia National Laboratories. The model was tuned to match the measurements data (see the report mentioned below). Since most measurements were present below rated wind speed, the data are only provided for this range of wind speeds.
+- `FAST7_model`: Contains the simulation model for the program `FAST7 <https://nwtc.nrel.gov/FAST7>`_.  All the necessary files, including the FAST binary are provided in this folder. The model was developed by C. Kelley and J. White from Sandia National Laboratories. The model was tuned to match the measurements data (see the report mentioned below). Since most measurements were present below rated wind speed, the data are only provided for this range of wind speeds.
+
+- `OpenFAST_model`: Contains the model for `OpenFAST <https://openfast.readthedocs.io/>`_  1 and 2. It is recommended to use the `OpenFAST2` model (`\_OF2`) since the aerodynamic module received some important updates between `OpenFAST1` and `OpenFAST2` which affects the results.
+
+- `OpenFAST_model_NALU`: Containes the `OpenFAST1` model, adjusted such that it can be used directly within NALU (`WakeMod=0` and `CompInflow=2`)
+
 
 - `Raw_model`: To ease the implementation of the turbine model into another format than the FAST format, simple CSV files are provided in this directory. The data matches the data present in the `FAST_model` but its format should be straightforward to read. This folder contains:
    - ``OperationalConditions.csv``: Pitch and Rotational Speed as function of wind speed.
@@ -27,8 +32,9 @@ The folder  ``wt_data`` has the following subfolders:
    - ``Blade_Structure.csv``: Relevant structural data for the blade (Mass, Stiffnesses, etc.)
    - ``Tower_Structure.csv``: Relevant structural data for the tower (Mass, Stiffnesses, etc.)
 - `Simulated_data`: This folder contains simulated data obtained using the FAST model. These can be useful to compare the results from another model to the FAST results. Such data includes:
-   - ``RotorPerformances.csv``: Pitch, Rotational Speed, Power, Thrust, Blade Root Flapwise (out-of-plane) moment,  as function of wind speed.
-   - ``BladeAeroPerformances.csv``: Loads and inductions along the span of the blade for different wind speed. (coming soon)
+   - ``RotorPerformances.csv``: Pitch, Rotational Speed, Power, Thrust, Blade Root Flapwise (out-of-plane) moment, as function of wind speed, as obtained by the FAST7 model.
+   - ``RotorPerformances_OF2.csv``: Similar data but obtained with the `OpenFAST2` model
+   - ``AeroPerformances.csv``: Loads and inductions along the span of the blade for different wind speed as obtained by the FAST7 model
 
 Benchmark participants who choose not to use FAST or OpenFAST for their simulations are responsible for porting this turbine model to their simulation platform, and encouraged to share their developed model with the community.
 
