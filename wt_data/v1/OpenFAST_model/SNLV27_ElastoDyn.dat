@@ -32,7 +32,7 @@ False         PtfmYDOF    - Platform yaw rotation DOF (flag)
 1.665913124   BlPitch(3)  - Blade 3 initial pitch (degrees) [unused for 2 blades]
           0   TeetDefl    - Initial or fixed teeter angle (degrees) [unused for 3 blades]
           0   Azimuth     - Initial azimuth angle for blade 1 (degrees)
-      33.8   RotSpeed    - Initial or fixed rotor speed (rpm)
+      43.81  RotSpeed    - Initial or fixed rotor speed (rpm)
           0   NacYaw      - Initial or fixed nacelle-yaw angle (degrees)
           0   TTDspFA     - Initial fore-aft tower-top displacement (meters)
           0   TTDspSS     - Initial side-to-side tower-top displacement (meters)
@@ -121,7 +121,13 @@ True          TabDelim    - Use tab delimiters in text tabular output file? (fla
           1,          2    BldGagNd    - List of blade nodes that have strain gages [1 to BldNodes] (-) [unused if NBlGages=0]
               OutList     - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
 RotSpeed                   
-BldPitch1                  
+BldPitch1       
+RootMxb1 
+RootMxb2
+RootMxb3
+RootMyb1 
+RootMyb2
+RootMyb3           
 RootMxc1 
 RootMxc2
 RootMxc3

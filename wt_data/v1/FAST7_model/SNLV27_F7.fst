@@ -7,7 +7,7 @@ False            Echo        - Echo input data to <RootName>.out (flag)
 1                ADAMSPrep   - ADAMS preprocessor mode {1: Run FAST, 2: use FAST as a preprocessor to create an ADAMS model, 3: do both} (switch)
 1                AnalMode    - Analysis mode {1: Run a time-marching simulation, 2: create a periodic linearized model} (switch)
 3                NumBl       - Number of blades (-)
-900             TMax        - Total run time (s)
+2000             TMax        - Total run time (s)
 0.005            DT          - Integration time step (s)
 ---------------------- TURBINE CONTROL -----------------------------------------
 0                YCMode      - Yaw control mode {0: none, 1: user-defined from routine UserYawCont, 2: user-defined from Simulink} (switch)
@@ -70,7 +70,7 @@ False            CompNoise   - Compute aerodynamic noise (flag)
 0                IPDefl      - Initial in-plane blade-tip deflection, (meters)
 0                TeetDefl    - Initial or fixed teeter angle (degrees) [unused for 3 blades]
 0                Azimuth     - Initial azimuth angle for blade 1 (degrees)
-33.8            RotSpeed    - Initial or fixed rotor speed (rpm)
+43.81            RotSpeed    - Initial or fixed rotor speed (rpm)
 0                NacYaw      - Initial or fixed nacelle-yaw angle (degrees)
 0                TTDspFA     - Initial fore-aft tower-top displacement (meters)
 0                TTDspSS     - Initial side-to-side tower-top displacement (meters)
@@ -185,9 +185,21 @@ True             TabDelim    - Generate a tab-delimited tabular output file. (fl
 WindVxi
 RotSpeed
 BldPitch1
+RootMxb1 
+RootMxb2
+RootMxb3
+RootMyb1 
+RootMyb2
+RootMyb3  
+RootMxc1 
+RootMxc2
+RootMxc3
 RootMyc1 
 RootMyc2
 RootMyc3
+RootMzc1 
+RootMzc2
+RootMzc3
 "TwrBsFxt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
 "TwrBsFyt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
 "TwrBsFzt"                - Fore-aft shear, side-to-side shear, and vertical forces at the base of the tower (platform)
@@ -213,5 +225,6 @@ TSR
 RotCp
 RotCt
 GenPwr
+GenTq
 END of FAST input file (the word "END" must appear in the first 3 columns of this last line).
 --------------------------------------------------------------------------------
