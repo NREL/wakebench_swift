@@ -16,8 +16,9 @@
 # - blade_root_edge_moment_[N_m]
 # - generator_power_[kW]
 # - generator_torque_[N_m]
-# - thrust_force_[N]
-# - thrust_coefficient_[-]
+# - aero_thrust_force_[N]
+# - aero_thrust_coefficient_[-]
+# - total_thrust_force_[N]
 #
 # Guidelines:
 # - Ensure your results make sense
@@ -34,8 +35,9 @@ blade_root_flap_moment_[N_m],NaN
 blade_root_edge_moment_[N_m],NaN
 generator_power_[kW],NaN
 generator_torque_[N_m],NaN
-thrust_force_[N],NaN
-thrust_coefficient_[-],NaN
+aero_thrust_force_[N],NaN
+aero_thrust_coefficient_[-],NaN
+total_thrust_force_[N],NaN
 ###############################################################################
 # Please add more lines if you want to provide other variables.
 ###############################################################################
