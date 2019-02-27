@@ -1,5 +1,5 @@
-------- OpenFAST1 INPUT FILE ------------------------------------------------
-SNLV27 - v1 - OpenFAST1
+------- OpenFAST2 INPUT FILE ------------------------------------------------
+SNLV27 - v1 - OpenFAST2
 ---------------------- SIMULATION CONTROL --------------------------------------
 False         Echo            - Echo input data to <RootName>.ech (flag)
 "FATAL"       AbortLevel      - Error level when simulation should abort (string) {"WARNING", "SEVERE", "FATAL"}
@@ -24,7 +24,7 @@ False         Echo            - Echo input data to <RootName>.ech (flag)
 "unused"      BDBldFile(2)    - Name of file containing BeamDyn input parameters for blade 2 (quoted string)
 "unused"      BDBldFile(3)    - Name of file containing BeamDyn input parameters for blade 3 (quoted string)
 "SNLV27_InflowWind.dat"    InflowFile      - Name of file containing inflow wind input parameters (quoted string)
-"SNLV27_AeroDyn15OF1.dat"    AeroFile        - Name of file containing aerodynamic input parameters (quoted string)
+"SNLV27_AeroDyn15OF2.dat"    AeroFile        - Name of file containing aerodynamic input parameters (quoted string)
 "SNLV27_ServoDyn.dat"    ServoFile       - Name of file containing control and electrical-drive input parameters (quoted string)
 "unused"      HydroFile       - Name of file containing hydrodynamic input parameters (quoted string)
 "unused"      SubFile         - Name of file containing sub-structural input parameters (quoted string)
