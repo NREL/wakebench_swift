@@ -68,7 +68,7 @@ False          SumPrint            - Generate a summary file listing input optio
           1,          9,         20    BlOutNd             - Blade nodes whose values will be output  (-)
           0   NTwOuts             - Number of tower node outputs [0 - 9]  (-)
           1,          2,          6    TwOutNd             - Tower nodes whose values will be output  (-)
-                   OutList             - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
+OutList             - The next line(s) contains a list of output parameters.  See OutListParameters.xlsx for a listing of available output channels, (-)
 RtTSR,
 RtAeroCp
 RtAeroCt
