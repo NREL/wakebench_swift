@@ -46,9 +46,11 @@
 <div class="section" id="turbine-model">
 <h2>Turbine Model<a class="headerlink" href="#turbine-model" title="Permalink to this headline">¶</a></h2>
 <p>The turbine present at the SWiFT test site is a modified version of a Vestas V27. The data related to the wind turbine is stored in the github repository under the folder <a class="reference external" href="https://github.com/NREL/wakebench_swift/tree/master/wt_data">wt_data</a>. A version number is used to accommodate for potential versions of the turbine model that may be released in the future. For now, only one version is present: <code class="docutils literal notranslate"><span class="pre">v1</span></code>, and it is considered the official wind-turbine model for this benchmark unless specified otherwise.</p>
-<p>The folder  <code class="docutils literal notranslate"><span class="pre">wt_data</span></code> has the following subfolders:</p>
+<p>The folder  <code class="docutils literal notranslate"><span class="pre">wt_data/v1/</span></code> has the following subfolders:</p>
 <ul class="simple">
-<li><cite>FAST7_model</cite>: Contains the simulation model for the program <a class="reference external" href="https://nwtc.nrel.gov/FAST7">FAST7</a>. An <a class="reference external" href="https://openfast.readthedocs.io/">OpenFAST</a> version will be provided in the near future. All the necessary files, including the FAST binary are provided in this folder. The model was developed by C. Kelley and J. White from Sandia National Laboratories. The model was tuned to match the measurements data (see the report mentioned below). Since most measurements were present below rated wind speed, the data are only provided for this range of wind speeds.</li>
+<li><cite>FAST7_model</cite>: Contains the simulation model for the program <a class="reference external" href="https://nwtc.nrel.gov/FAST7">FAST7</a>.  All the necessary files, including the FAST binary are provided in this folder. The model was developed by C. Kelley and J. White from Sandia National Laboratories. The model was tuned to match the measurements data (see the report mentioned below). Since most measurements were present below rated wind speed, the data are only provided for this range of wind speeds.</li>
+<li><cite>OpenFAST_model</cite>: Contains the model for <a class="reference external" href="https://openfast.readthedocs.io/">OpenFAST</a>  1 and 2. It is recommended to use the <cite>OpenFAST2</cite> model (<cite>_OF2</cite>) since the aerodynamic module received some important updates between <cite>OpenFAST1</cite> and <cite>OpenFAST2</cite> which affects the results.</li>
+<li><cite>OpenFAST_model_NALU</cite>: Containes the <cite>OpenFAST1</cite> model, adjusted such that it can be used directly within NALU (<cite>WakeMod=0</cite> and <cite>CompInflow=2</cite>)</li>
 <li><dl class="first docutils">
 <dt><cite>Raw_model</cite>: To ease the implementation of the turbine model into another format than the FAST format, simple CSV files are provided in this directory. The data matches the data present in the <cite>FAST_model</cite> but its format should be straightforward to read. This folder contains:</dt>
 <dd><ul class="first last">
@@ -64,8 +66,9 @@
 <li><dl class="first docutils">
 <dt><cite>Simulated_data</cite>: This folder contains simulated data obtained using the FAST model. These can be useful to compare the results from another model to the FAST results. Such data includes:</dt>
 <dd><ul class="first last">
-<li><code class="docutils literal notranslate"><span class="pre">RotorPerformances.csv</span></code>: Pitch, Rotational Speed, Power, Thrust, Blade Root Flapwise (out-of-plane) moment,  as function of wind speed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">BladeAeroPerformances.csv</span></code>: Loads and inductions along the span of the blade for different wind speed. (coming soon)</li>
+<li><code class="docutils literal notranslate"><span class="pre">RotorPerformances.csv</span></code>: Pitch, Rotational Speed, Power, Thrust, Blade Root Flapwise (out-of-plane) moment, as function of wind speed, as obtained by the FAST7 model.</li>
+<li><code class="docutils literal notranslate"><span class="pre">RotorPerformances_OF2.csv</span></code>: Similar data but obtained with the <cite>OpenFAST2</cite> model</li>
+<li><code class="docutils literal notranslate"><span class="pre">AeroPerformances.csv</span></code>: Loads and inductions along the span of the blade for different wind speed as obtained by the FAST7 model</li>
 </ul>
 </dd>
 </dl>
@@ -167,7 +170,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_wtg_response.txt" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li>File shall have one column per variable (including time) and <span class="math notranslate nohighlight">\(n_t\)</span> rows of data (don’t upload the spin up!)</li>
-<li>Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torqeu (N m), thrust force integrated over the rotor (N), thrust coefficient (-)</li>
+<li>Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torque (N m), aerodynamic thrust force (N), thrust coefficient (-), total thrust force (N)</li>
 </ul>
 </dd>
 </dl>

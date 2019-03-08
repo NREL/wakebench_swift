@@ -96,7 +96,7 @@ The inputs with high uncertainty which may need calibration include: the aerodyn
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response.txt>`
         - ``<YYYYMMDD>`` is the file submission date
         - File shall have one column per variable (including time) and :math:`n_t` rows of data (don't upload the spin up!)
-        - Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torqeu (N m), thrust force integrated over the rotor (N), thrust coefficient (-)
+        - Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torque (N m), aerodynamic thrust force (N), thrust coefficient (-), total thrust force (N)
 - Results for steady-state simulation tools:
     - Upload a single file named ``<participant_id>_<YYYYMMDD>_wtg_response_steady_state.txt``
         - A template for this file can be downloaded :download:`here <../../file_templates/template_YYYYMMDD_wtg_response_steady_state.txt>`
