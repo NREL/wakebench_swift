@@ -1,0 +1,11 @@
+Data provided in these files
+----------------------------
+ - swift*WTGa1.csv
+   - turbine response for each 10-minute time series used to the define the three benchmarks
+   - every 0.02 seconds
+ - swift*wtg_and_met*.csv
+   - turbine response and upstream met mast hub-height inflow measurements concatenated so that timestamps are matched
+   - every 0.1 seconds
+   - because data are downsampled, values do not match exactly the higher resolution time series
+ - swift*wtg_summary.csv
+   - statistics of each benchmark, obtained by averaging each quantity in time over the individual 10 minute time series used to define the benchmark (which yields a total of 5 or 6 values depending on the benchmark), and then averaging across these temporal means to provide an ensemble average of the time averages
