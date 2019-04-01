@@ -100,7 +100,10 @@ for wtg_file in wtg_files:
     try:
         measurements = pd.read_csv(measurement_summary[0], index_col=[0])
     except:
-        variables = ["rotor_speed_[rpm]","blade_root_flap_moment_[N_m]","rotor_torque_[N_m]","rotor_power_[kW]"]
+	print("!!!!!!!!!!!!!!!!!")
+	print("Could not find summary file which has measurement data. Please go get it and put it here.") 
+	print("!!!!!!!!!!!!!!!!!")
+        variables = ["rotor_speed_[rpm]","blade_root_flap_moment_[N_m]","generator_torque_[N_m]","generator_power_[kW]"]
         measurements = pd.DataFrame(columns=["mean","median"],index=variables)
         measurements[:] = np.nan
 
