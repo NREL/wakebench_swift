@@ -1,0 +1,105 @@
+###############################################################################
+# IEA Wind Task 31 "WakeBench"
+# Work Package 2
+# Phase 3
+# The SWiFT Benchmarks
+#
+# Example file for simulation setup
+# Guidelines:
+# - The values provided herein are mere examples
+# - You will need to add and remove parameters
+# - Populate this file with all relevant parameters of your model
+# - For each parameter, please include: name, value, unit, and description
+# - For each time you submit new results to the benchmark, please update this
+#    file to reflect your simulation settings
+# - When relevant, add information about turbine_model and wake_model as well
+###############################################################################
+flow_model:
+  name: "SOWFA"
+  type: "LES"
+  mesh:
+    -
+      name: "dx"
+      value: 10.0
+      unit: "m"
+      description: "grid spacing along x"
+    -
+      name: "dy"
+      value: 10.0
+      unit: "m"
+      description: "grid spacing along y"
+    -
+      name: "dz"
+      value: 5.0
+      unit: "m"
+      description: "grid spacing along z"
+      remarks: >
+        if you have something to say about some variable,
+        you can just add remark.
+    -
+      name: "n_x"
+      value: 300
+      unit: "-"
+      description: "number of points along x"
+    -
+      name: "n_y"
+      value: 300
+      unit: "-"
+      description: "number of points along y"
+    -
+      name: "n_z"
+      value: 100
+      unit: "-"
+      description: "number of points along x"
+  time_information:
+    -
+      name: "dt"
+      value: 0.1
+      unit: "s"
+      description: "wake simulation time step"
+    -
+      name: "T"
+      value: 3600
+      unit: "s"
+      description: "usable simulation time uploaded to benchmark"      
+  initial_conditions:
+    -
+      name: "z_0"
+      value: 0.01
+      unit: "m"
+      description: "roughness length"
+    -
+      name: "U_{hub}"
+      value: 10.0
+      unit: "m s-1"
+      description: "reference (hub-height) horizontal wind speed"
+    -
+      name: "\overline{w'\theta'}"
+      value: 0.0
+      unit: "K m s-1"
+      description: "vertical turbulent kinematic heat flux at the surface"
+    -
+      name: "z_i"
+      value: 700.0
+      unit: "m"
+      description: "atmospheric boundary layer inversion height"
+    -
+      name: "dz_i"
+      value: 100.0
+      unit: "m"
+      description: "depth of inversion layer that caps atmospheric boundary layer"
+    -
+      name: "\frac{d\theta}{dz}"
+      value: 0.003
+      unit: "K m-1"
+      description: "potential temperature gradient above the inversion that caps the atmospheric boundary layer"
+    -
+      name: "\theta_{bottom}"
+      value: 314.4
+      unit: "K"
+      description: "potential temperature at the bottom of inversion layer that caps atmospheric boundary layer"
+    -
+      name: "\theta_{top}"
+      value: 319.4
+      unit: "K"
+      description: "potential temperature at the top of inversion layer that caps atmospheric boundary layer"

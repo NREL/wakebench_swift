@@ -13,7 +13,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="What to submit?" href="submissions.html" />
@@ -30,6 +30,8 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="benchmark-simulations">
@@ -77,7 +79,7 @@
 <p>Benchmark participants who choose not to use FAST or OpenFAST for their simulations are responsible for porting this turbine model to their simulation platform, and encouraged to share their developed model with the community.</p>
 <p>The following publications may be used as references for further details on the model:</p>
 <ul class="simple">
-<li>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018 (<a class="reference download internal" href="_downloads/SAND_V27_FAST_Update.pdf" download=""><code class="xref download docutils literal notranslate"><span class="pre">download</span></code></a>)</li>
+<li>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018 (<a class="reference download internal" download="" href="_downloads/f46966d55ce3de8ed039bb5915d71269/SAND_V27_FAST_Update.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span></code></a>)</li>
 <li>Brian R. Resor and Bruce LeBlanc - <em>An Aeroelastic Reference Model for the SWIFT Turbines</em>, Sandia report SAND2014-19136, 2014</li>
 </ul>
 </div>
@@ -99,7 +101,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <li><dl class="first docutils">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_simulation_setup.yaml</span></code></dt>
 <dd><ul class="first last">
-<li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_simulation_setup.yaml" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
+<li>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/b8a705fcc81c1e6c447d4a7c68b08bc9/template_YYYYMMDD_simulation_setup.yaml"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li><dl class="first docutils">
 <dt>Requested parameters are:</dt>
@@ -126,8 +128,8 @@ For additional quantities of interest, the simulated values are compared to the 
 <li><dl class="first docutils">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_uvw_&lt;x&gt;D.nc</span></code> (format <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF 4.0</a>)</dt>
 <dd><ul class="first last">
-<li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_uvw_2D.nc" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
-<li>A sample writer for this file can be found in this <a class="reference download internal" href="_downloads/example_write_netcdf.ipynb" download=""><code class="xref download docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></a></li>
+<li>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/3e8968f621eb04fe8ca6b2e87accab6d/template_YYYYMMDD_uvw_2D.nc"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
+<li>A sample writer for this file can be found in this <a class="reference download internal" download="" href="_downloads/e82ca7f7715d9b46709f4091d9f3ee96/example_write_netcdf.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;x&gt;</span></code> is the downstream distance <span class="math notranslate nohighlight">\(x\)</span> normalized by the rotor diameter <span class="math notranslate nohighlight">\(D\)</span></li>
 <li>File should contain <span class="math notranslate nohighlight">\(u,v,w\)</span> values, which are four-dimensional: <span class="math notranslate nohighlight">\((n_t \times n_x \times n_y \times n_z)\)</span>. For this submission, <span class="math notranslate nohighlight">\(n_x=1\)</span> (<span class="math notranslate nohighlight">\(x=-65~\mathrm{m}\sim-2.5\mathrm{D}\)</span>) and the time is given in units of seconds, since the start of the simulation usable time (i.e., not counting spin-up)</li>
@@ -167,7 +169,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <li><dl class="first docutils">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_wtg_response.txt</span></code></dt>
 <dd><ul class="first last">
-<li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_wtg_response.txt" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
+<li>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/620f821b9709df4ade1e3777440cf039/template_YYYYMMDD_wtg_response.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li>File shall have one column per variable (including time) and <span class="math notranslate nohighlight">\(n_t\)</span> rows of data (don’t upload the spin up!)</li>
 <li>Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torque (N m), aerodynamic thrust force (N), thrust coefficient (-), total thrust force (N)</li>
@@ -185,7 +187,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <li><dl class="first docutils">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_wtg_response_steady_state.txt</span></code></dt>
 <dd><ul class="first last">
-<li>A template for this file can be downloaded <a class="reference download internal" href="_downloads/template_YYYYMMDD_wtg_response_steady_state.txt" download=""><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
+<li>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/53f56e7222433b4003e31db062d200e0/template_YYYYMMDD_wtg_response_steady_state.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></li>
 <li><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</li>
 <li>File shall have two columns: variable name, variable value</li>
 <li>Requested variables are the same as those requested for the time-stepping tools, and their value set to NaN (not -999.0) when model cannot simulate them</li>
@@ -261,6 +263,7 @@ For additional quantities of interest, the simulated values are compared to the 
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -315,6 +318,14 @@ For additional quantities of interest, the simulated values are compared to the 
     </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -323,8 +334,8 @@ For additional quantities of interest, the simulated values are compared to the 
       &copy;2018, Paula Doubrawa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/simulations.rst.txt"
