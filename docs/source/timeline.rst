@@ -20,7 +20,7 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | February 26, 2019     | SWiFT Benchmarks Web-Meeting (#4) :download:`download slides <../../supporting_material/benchmarks_meeting4_022719.pdf>`                  |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| March 4, 2019         | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                                     | 
+| March 4, 2019         | Deadline to submit results for Phase 2: Blind Comparison, Part 1 (for all benchmarks)                                                     |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | March 11-14, 2019     | Joint Meeting with IEA Wind Task 29 in Boulder, CO :download:`download slides <../../supporting_material/benchmarks_meeting5_031219.pdf>` |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -30,13 +30,13 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | April 16, 2019        | SWiFT Benchmarks Web-Meeting (#5) :download:`download slides <../../supporting_material/benchmarks_meeting6_041619.pdf>`                  |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| May 3, 2019           | Deadline to submit results for Phase 2: Blind Comparison, Part 2                                                                          |
+| May 10, 2019          | Deadline to submit results for Phase 2: Blind Comparison, Part 2                                                                          |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| May 21, 2019          | End of blind comparison and release of measurement data                                                                                   |
-+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| May 21, 2019          | Meeting prior to Wake Conference in Visby, Sweden                                                                                         |
+| May 21, 2019          | Meeting prior to Wake Conference in Visby, Sweden :download:`download slides <../../supporting_material/benchmarks_meeting7_052119.pdf>`  |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | May 22–24, 2019       | Publication and presentation of benchmark at Wake Conference in Visby, Sweden                                                             |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| May 21-June 21, 2019  | Participants can submit updated results for Phase 3: Iteration                                                                            |
+| May 2019              | End of blind comparison and release of measurement data                                                                                   |
++-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+| June-August, 2019     | Participants can submit updated results for Phase 3: Iteration                                                                            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
