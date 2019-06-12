@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>What to submit? &#8212; SWiFT Benchmarks  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -13,7 +11,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Neutral Benchmark" href="swift_neutral_evolution.html" />
@@ -45,27 +44,27 @@
 <p>Please go to <a class="reference internal" href="simulations.html#simulations"><span class="std std-ref">Benchmark Simulations</span></a> for detailed information on files requested. Here is a quick summary:</p>
 <p><strong>Benchmarks Phase 1: Code Calibration (COMPLETED)</strong></p>
 <ul class="simple">
-<li>Simulation setup (1 file)</li>
-<li>Atmospheric inflow to the wind turbine (1 file)</li>
-<li>Wind turbine response to the inflow (1 file)</li>
-<li>Total of 3 files</li>
+<li><p>Simulation setup (1 file)</p></li>
+<li><p>Atmospheric inflow to the wind turbine (1 file)</p></li>
+<li><p>Wind turbine response to the inflow (1 file)</p></li>
+<li><p>Total of 3 files</p></li>
 </ul>
 <p><strong>Benchmarks Phase 2: Blind Comparison</strong></p>
 <p><strong>Please keep results for each benchmark separate, in folders called neutral, unstable and stable.</strong></p>
 <ul class="simple">
-<li>Simulation setup (1 file)</li>
-<li>Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)</li>
-<li>Wind turbine response to the inflow (1 file)</li>
-<li>Total of 11 files</li>
+<li><p>Simulation setup (1 file)</p></li>
+<li><p>Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)</p></li>
+<li><p>Wind turbine response to the inflow (1 file)</p></li>
+<li><p>Total of 11 files</p></li>
 </ul>
 <p><strong>Benchmarks Phase 3: Iteration</strong></p>
 <p><strong>Please keep results for each benchmark separate, in folders called neutral, unstable and stable.</strong></p>
 <ul class="simple">
-<li>Simulation setup (1 file)</li>
-<li>Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)</li>
-<li>Wind turbine response to the inflow (1 file)</li>
-<li>Text file (1 file) explaining any updates made to the code for the newly uploaded iteration of the solution</li>
-<li>Total of 12 files</li>
+<li><p>Simulation setup (1 file)</p></li>
+<li><p>Simulated flow (9 files, one per downstream distance: -2.5 D and 1 D through 8 D in 1 D increments)</p></li>
+<li><p>Wind turbine response to the inflow (1 file)</p></li>
+<li><p>Text file (1 file) explaining any updates made to the code for the newly uploaded iteration of the solution</p></li>
+<li><p>Total of 12 files</p></li>
 </ul>
 </div>
 </div>
@@ -113,13 +112,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -140,7 +137,7 @@
       &copy;2018, Paula Doubrawa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

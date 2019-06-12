@@ -36,7 +36,7 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | May 22–24, 2019       | Publication and presentation of benchmark at Wake Conference in Visby, Sweden                                                             |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| May 2019              | End of blind comparison and release of measurement data                                                                                   |
+| June 11, 2019         | Release of measurement data (see releases in the `GitHub repository <https://github.com/NREL/wakebench_swift>`_)                          |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | June-August, 2019     | Participants can submit updated results for Phase 3: Iteration                                                                            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Measurements &#8212; SWiFT Benchmarks  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -13,7 +11,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Benchmark Simulations" href="simulations.html" />
@@ -41,12 +40,12 @@
 <h2>Atmospheric Inflow Measurements<a class="headerlink" href="#atmospheric-inflow-measurements" title="Permalink to this headline">¶</a></h2>
 <p>Inflow conditions are obtained from a meteorological tower located upstream of the turbine (approximately 2.5 D upstream of the turbine for southerly winds). The instrumentation includes:</p>
 <ul class="simple">
-<li>Sonic anemometers at 10 m, 18 m, 32 m, 45 m, and 58 m above the ground</li>
-<li>Cup anemometers at 18 m, 31.5 m, and 45 m above the ground</li>
-<li>Wind vane at 29.5 m above the ground</li>
-<li>Two barometric pressure sensors at 2.5 m and 30 m above the ground</li>
-<li>Three relative humidity sensors at 2.5 m, 30 m, and 56.5 m above the ground</li>
-<li>Three air temperature sensors at 2.5 m, 30 m, and 56.5 m above the ground</li>
+<li><p>Sonic anemometers at 10 m, 18 m, 32 m, 45 m, and 58 m above the ground</p></li>
+<li><p>Cup anemometers at 18 m, 31.5 m, and 45 m above the ground</p></li>
+<li><p>Wind vane at 29.5 m above the ground</p></li>
+<li><p>Two barometric pressure sensors at 2.5 m and 30 m above the ground</p></li>
+<li><p>Three relative humidity sensors at 2.5 m, 30 m, and 56.5 m above the ground</p></li>
+<li><p>Three air temperature sensors at 2.5 m, 30 m, and 56.5 m above the ground</p></li>
 </ul>
 <p>Several quantities are diagnosed from these measurements. These quantities are computed for each individual 10-minute period. The values provided in each benchmark as inflow conditions are ensemble averages that consider all of the 10-minute periods used to define the benchmark.</p>
 </div>
@@ -54,14 +53,13 @@
 <h2>Wind Turbine Measurements<a class="headerlink" href="#wind-turbine-measurements" title="Permalink to this headline">¶</a></h2>
 <p>The turbine operation data used to define the benchmarks are collected with the following sensors:</p>
 <ul class="simple">
-<li>Wind speed and direction sensor at the back of the nacelle</li>
-<li>Yaw heading sensor</li>
-<li>Generator power and torque sensors</li>
-<li>Blade-pitch sensor</li>
-<li><dl class="first docutils">
-<dt>Loads measurements</dt>
-<dd><ul class="first last">
-<li>Four strain gauges at the blade root, which give the flap and edge moments in the blade coordinate system</li>
+<li><p>Wind speed and direction sensor at the back of the nacelle</p></li>
+<li><p>Yaw heading sensor</p></li>
+<li><p>Generator power and torque sensors</p></li>
+<li><p>Blade-pitch sensor</p></li>
+<li><dl class="simple">
+<dt>Loads measurements</dt><dd><ul>
+<li><p>Four strain gauges at the blade root, which give the flap and edge moments in the blade coordinate system</p></li>
 </ul>
 </dd>
 </dl>
@@ -72,10 +70,10 @@
 <h2>Wake Measurements<a class="headerlink" href="#wake-measurements" title="Permalink to this headline">¶</a></h2>
 <p>The wind turbine wake is characterized using the Technical University of Denmark (DTU) SpinnerLidar. A model of the scanning geometry will be released in a Sandia report prior to Phase 2 of the SWiFT Benchmarks exercise.</p>
 <ul class="simple">
-<li>Line-of-sight velocity (<span class="math notranslate nohighlight">\(v_{los}\)</span>) is measured in curved surfaces that span a large extent in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> but a small extent in <span class="math notranslate nohighlight">\(x\)</span>. For the purposes of the benchmark, these curved surfaces are therefore assumed to be <span class="math notranslate nohighlight">\(y-z\)</span> planes at a fixed <span class="math notranslate nohighlight">\(x\)</span> distance downstream of the rotor.</li>
-<li>One plane of <span class="math notranslate nohighlight">\(v_{los}\)</span> is retrieved approximately every 2 seconds.</li>
-<li>The dynamics benchmark considers measurement periods in which the focal length was kept constant throughout the 10-minute measuring span. This provides high-frequency data from which to quantify the dynamic behavior of the wake.</li>
-<li>The evolution benchmarks consider measurement periods in which the focal length cycled through several <span class="math notranslate nohighlight">\(x\)</span> values, typically between 1 D and 5 D. The temporal frequency is lower, but the wake evolution can be quantified as it propagates downstream.</li>
+<li><p>Line-of-sight velocity (<span class="math notranslate nohighlight">\(v_{los}\)</span>) is measured in curved surfaces that span a large extent in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> but a small extent in <span class="math notranslate nohighlight">\(x\)</span>. For the purposes of the benchmark, these curved surfaces are therefore assumed to be <span class="math notranslate nohighlight">\(y-z\)</span> planes at a fixed <span class="math notranslate nohighlight">\(x\)</span> distance downstream of the rotor.</p></li>
+<li><p>One plane of <span class="math notranslate nohighlight">\(v_{los}\)</span> is retrieved approximately every 2 seconds.</p></li>
+<li><p>The dynamics benchmark considers measurement periods in which the focal length was kept constant throughout the 10-minute measuring span. This provides high-frequency data from which to quantify the dynamic behavior of the wake.</p></li>
+<li><p>The evolution benchmarks consider measurement periods in which the focal length cycled through several <span class="math notranslate nohighlight">\(x\)</span> values, typically between 1 D and 5 D. The temporal frequency is lower, but the wake evolution can be quantified as it propagates downstream.</p></li>
 </ul>
 </div>
 <div class="section" id="measurement-data-selection-criteria">
@@ -88,12 +86,12 @@
 <h2>Site Layout<a class="headerlink" href="#site-layout" title="Permalink to this headline">¶</a></h2>
 <p>The coordinate system of the validation analyses places the wind turbine at the origin. The geographical location of the wind turbine is given below.</p>
 <ul class="simple">
-<li>GPS Coordinates: 33.60795° N, 102.04862° W</li>
-<li>Standard UTM Zone 13: 773846.5 Easting, 3722593.7 Northing</li>
-<li>Elevation of the wind turbine base: 1018.0 m</li>
+<li><p>GPS Coordinates: 33.60795° N, 102.04862° W</p></li>
+<li><p>Standard UTM Zone 13: 773846.5 Easting, 3722593.7 Northing</p></li>
+<li><p>Elevation of the wind turbine base: 1018.0 m</p></li>
 </ul>
 <p>The meteorological tower used to collect upstream measurements is located approximately 2.5 rotor diameters upstream from the WTG rotor when winds come from the south. The schematic below shows the site layout for an example where the mean wind direction is from the southwest sector.</p>
-<div class="figure">
+<div class="figure align-default">
 <img alt="_images/site_sketch.png" src="_images/site_sketch.png" />
 </div>
 <p><em>Figure: Schematic of the wind turbine and meteorological tower geographical location, and of the lidar measurements collected downwind.</em></p>
@@ -146,13 +144,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -173,7 +169,7 @@
       &copy;2018, Paula Doubrawa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

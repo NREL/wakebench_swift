@@ -1,11 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Unstable Benchmark &#8212; SWiFT Benchmarks  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -13,7 +11,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Validation Methodology" href="validation.html" />
@@ -37,7 +36,8 @@
   <div class="section" id="unstable-benchmark">
 <span id="swift-unstable-dynamics"></span><h1>Unstable Benchmark<a class="headerlink" href="#unstable-benchmark" title="Permalink to this headline">¶</a></h1>
 <blockquote class="pull-quote">
-<div><strong>This exercise will reveal how well different models perform under unstable conditions, where large and active turbulent eddies often lead to wake meandering and accelerate wake recovery.</strong></div></blockquote>
+<div><p><strong>This exercise will reveal how well different models perform under unstable conditions, where large and active turbulent eddies often lead to wake meandering and accelerate wake recovery.</strong></p>
+</div></blockquote>
 <p>This benchmark focuses on “Wake Dynamics under Unstable Atmospheric Conditions”. The validation focuses on the dynamic characteristics of a single wake at a fixed downstream distance. The objective of this exercise is to evaluate the ability of various models to simulate the unsteady behavior of wakes, which is extremely relevant if models are to be used to diagnose the effects of turbulence on performance and reliability.</p>
 <p>This benchmark welcomes all time-stepping models. This document provides detailed, quantitative information necessary to engage in this specific SWiFT Benchmark. For general information about the SWiFT Benchmarks, see <a class="reference internal" href="index.html#the-swift-benchmarks"><span class="std std-ref">The SWiFT Benchmarks</span></a>.</p>
 <div class="section" id="the-measurements">
@@ -49,83 +49,83 @@
 <p>Participants are asked to simulate the mean wake behind a single turbine (between 1 D and 8 D) operating in an unstable atmosphere under the inflow described below. Please observe the <a class="reference internal" href="simulations.html#simulations"><span class="std std-ref">simulation guidelines</span></a> for information that is common to all SWiFT benchmarks (e.g., turbine model, requested output files).</p>
 <p><strong>Inflow Conditions</strong></p>
 <p>The information below should be used by the benchmark participants to simulate atmospheric inflow (in the case of higher-fidelity models) or to constrain the parameters used to initialize the model (in the case of lower-fidelity models). Not all information given will necessarily be used to perform the simulations. Note that the values provided refer to the ensemble average of five 10-minute temporal averages.</p>
-<table border="1" class="colwidths-given docutils">
+<table class="colwidths-given docutils align-default">
 <colgroup>
-<col width="10%" />
-<col width="40%" />
-<col width="10%" />
-<col width="10%" />
-<col width="30%" />
+<col style="width: 10%" />
+<col style="width: 40%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 30%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Variable</td>
-<td>Short Description</td>
-<td>Value</td>
-<td>Unit</td>
-<td>Remark</td>
+<tbody>
+<tr class="row-odd"><td><p>Variable</p></td>
+<td><p>Short Description</p></td>
+<td><p>Value</p></td>
+<td><p>Unit</p></td>
+<td><p>Remark</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(\langle \overline{U}_{hub} \rangle\)</span></td>
-<td>Mean hub-height wind speed</td>
-<td>6.7</td>
-<td>m/s</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\langle \overline{U}_{hub} \rangle\)</span></p></td>
+<td><p>Mean hub-height wind speed</p></td>
+<td><p>6.7</p></td>
+<td><p>m/s</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\langle \overline{TI}_{hub} \rangle\)</span></td>
-<td>Mean hub-height turbulence intensity</td>
-<td>12.6</td>
-<td>%</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\langle \overline{TI}_{hub} \rangle\)</span></p></td>
+<td><p>Mean hub-height turbulence intensity</p></td>
+<td><p>12.6</p></td>
+<td><p>%</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(\langle \alpha\rangle\)</span></td>
-<td>Mean wind-speed profile power-law exponent</td>
-<td>0.14</td>
-<td>-</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\langle \alpha\rangle\)</span></p></td>
+<td><p>Mean wind-speed profile power-law exponent</p></td>
+<td><p>0.14</p></td>
+<td><p>-</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(z_0\)</span></td>
-<td>Roughness length</td>
-<td>0.005-0.05</td>
-<td>m</td>
-<td>Value obtained from the neutral benchmark measurements</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(z_0\)</span></p></td>
+<td><p>Roughness length</p></td>
+<td><p>0.005-0.05</p></td>
+<td><p>m</p></td>
+<td><p>Value obtained from the neutral benchmark measurements</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(z_i\)</span></td>
-<td>Atmospheric boundary layer height</td>
-<td><ul class="first last simple">
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(z_i\)</span></p></td>
+<td><p>Atmospheric boundary layer height</p></td>
+<td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td>m</td>
-<td>No measurements available</td>
+<td><p>m</p></td>
+<td><p>No measurements available</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\langle z/L \rangle\)</span></td>
-<td>Stability parameter</td>
-<td>-0.089</td>
-<td>-</td>
-<td>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\langle z/L \rangle\)</span></p></td>
+<td><p>Stability parameter</p></td>
+<td><p>-0.089</p></td>
+<td><p>-</p></td>
+<td><p>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(\langle u_* \rangle\)</span></td>
-<td>Friction velocity</td>
-<td>0.33</td>
-<td>m/s</td>
-<td>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\langle u_* \rangle\)</span></p></td>
+<td><p>Friction velocity</p></td>
+<td><p>0.33</p></td>
+<td><p>m/s</p></td>
+<td><p>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\langle \overline{w'\theta_v'} \rangle\)</span></td>
-<td>Kinematic vertical turbulent heat flux</td>
-<td>0.023</td>
-<td>K m/s</td>
-<td>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\langle \overline{w'\theta_v'} \rangle\)</span></p></td>
+<td><p>Kinematic vertical turbulent heat flux</p></td>
+<td><p>0.023</p></td>
+<td><p>K m/s</p></td>
+<td><p>Computed from sonic measurements at <span class="math notranslate nohighlight">\(z=10\)</span> m</p></td>
 </tr>
-<tr class="row-even"><td><span class="math notranslate nohighlight">\(\langle \theta_v \rangle_0\)</span></td>
-<td>Virtual potential temperature near ground</td>
-<td>290.9</td>
-<td>K</td>
-<td>Computed from temperature and pressure sensors at <span class="math notranslate nohighlight">\(z=2\)</span> m</td>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\langle \theta_v \rangle_0\)</span></p></td>
+<td><p>Virtual potential temperature near ground</p></td>
+<td><p>290.9</p></td>
+<td><p>K</p></td>
+<td><p>Computed from temperature and pressure sensors at <span class="math notranslate nohighlight">\(z=2\)</span> m</p></td>
 </tr>
-<tr class="row-odd"><td><span class="math notranslate nohighlight">\(\langle \rho \rangle_{hub}\)</span></td>
-<td>Air density</td>
-<td>1.09</td>
-<td>kg m-3</td>
-<td>Total air density, considers dry air and water vapor</td>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\langle \rho \rangle_{hub}\)</span></p></td>
+<td><p>Air density</p></td>
+<td><p>1.09</p></td>
+<td><p>kg m-3</p></td>
+<td><p>Total air density, considers dry air and water vapor</p></td>
 </tr>
 </tbody>
 </table>
@@ -177,13 +177,11 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
@@ -204,7 +202,7 @@
       &copy;2018, Paula Doubrawa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
