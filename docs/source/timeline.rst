@@ -3,7 +3,7 @@
 Timeline
 ========
 
-The dates below are tentative. Invites will be sent out prior to each meeting, confirming the dates below and informing the time and location.
+~~The dates below are tentative. Invites will be sent out prior to each meeting, confirming the dates below and informing the time and location.~~
 
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | Date                  | Milestone                                                                                                                                 |
@@ -38,5 +38,5 @@ The dates below are tentative. Invites will be sent out prior to each meeting, c
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | June 11, 2019         | Release of measurement data (see releases in the `GitHub repository <https://github.com/NREL/wakebench_swift>`_)                          |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-| June-August, 2019     | Participants can submit updated results for Phase 3: Iteration                                                                            |
+| June-Sep 15, 2019     | Participants can submit updated results for Phase 3: Iteration                                                                            |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+

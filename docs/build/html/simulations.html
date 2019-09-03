@@ -76,7 +76,7 @@
 <p>Benchmark participants who choose not to use FAST or OpenFAST for their simulations are responsible for porting this turbine model to their simulation platform, and encouraged to share their developed model with the community.</p>
 <p>The following publications may be used as references for further details on the model:</p>
 <ul class="simple">
-<li><p>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018 (<a class="reference download internal" download="" href="_downloads/7f4872b0695ad4dbc2297ce0a7440f39/SAND_V27_FAST_Update.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span></code></a>)</p></li>
+<li><p>Christopher L. Kelley and Jonathan White, <em>An Update to the SWiFT V27 Reference Model</em>, Sandia report SAND2018-11893, 2018 (<a class="reference download internal" download="" href="_downloads/6dd50450f319f60c6759a9e05d571928/SAND_V27_FAST_Update.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span></code></a>)</p></li>
 <li><p>Brian R. Resor and Bruce LeBlanc - <em>An Aeroelastic Reference Model for the SWIFT Turbines</em>, Sandia report SAND2014-19136, 2014</p></li>
 </ul>
 </div>
@@ -97,7 +97,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <dt>Simulation setup:</dt><dd><ul>
 <li><dl class="simple">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_simulation_setup.yaml</span></code></dt><dd><ul>
-<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/37159973962ac4da66cac866fafe8c1c/template_YYYYMMDD_simulation_setup.yaml"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
+<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/944e40c38df2e009dc0e1da760710c8b/template_YYYYMMDD_simulation_setup.yaml"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</p></li>
 <li><dl class="simple">
 <dt>Requested parameters are:</dt><dd><ul>
@@ -121,8 +121,8 @@ For additional quantities of interest, the simulated values are compared to the 
 <dt>Results for time-stepping simulation tools:</dt><dd><ul>
 <li><dl class="simple">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_uvw_&lt;x&gt;D.nc</span></code> (format <a class="reference external" href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF 4.0</a>)</dt><dd><ul>
-<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/5446a464b29e834be4536331619abdf0/template_YYYYMMDD_uvw_2D.nc"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
-<li><p>A sample writer for this file can be found in this <a class="reference download internal" download="" href="_downloads/104631752d2550ea310473707029af57/example_write_netcdf.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></a></p></li>
+<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/258a4407d10fe394ac3531448bf4a497/template_YYYYMMDD_uvw_2D.nc"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
+<li><p>A sample writer for this file can be found in this <a class="reference download internal" download="" href="_downloads/1bb2ad4a83771ba375d4dab02f950400/example_write_netcdf.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;x&gt;</span></code> is the downstream distance <span class="math notranslate nohighlight">\(x\)</span> normalized by the rotor diameter <span class="math notranslate nohighlight">\(D\)</span></p></li>
 <li><p>File should contain <span class="math notranslate nohighlight">\(u,v,w\)</span> values, which are four-dimensional: <span class="math notranslate nohighlight">\((n_t \times n_x \times n_y \times n_z)\)</span>. For this submission, <span class="math notranslate nohighlight">\(n_x=1\)</span> (<span class="math notranslate nohighlight">\(x=-65~\mathrm{m}\sim-2.5\mathrm{D}\)</span>) and the time is given in units of seconds, since the start of the simulation usable time (i.e., not counting spin-up)</p></li>
@@ -158,7 +158,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <dt>Results for time-stepping simulation tools:</dt><dd><ul>
 <li><dl class="simple">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_wtg_response.txt</span></code></dt><dd><ul>
-<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/47d9ea693d4726e0a4293b2a3d6c5299/template_YYYYMMDD_wtg_response.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
+<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/690a040a04a9a867d18a744e2905170b/template_YYYYMMDD_wtg_response.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</p></li>
 <li><p>File shall have one column per variable (including time) and <span class="math notranslate nohighlight">\(n_t\)</span> rows of data (don’t upload the spin up!)</p></li>
 <li><p>Requested variables are time series of hub-height wind speed at the turbine (m/s), rotor power (kW), rotor torque (N m), blade pitch for one blade (deg), blade root flapwise moment for one blade (N m), blade root edgewise moment for one blade (N m), generator power (kW), generator torque (N m), aerodynamic thrust force (N), thrust coefficient (-), total thrust force (N)</p></li>
@@ -174,7 +174,7 @@ For additional quantities of interest, the simulated values are compared to the 
 <dt>Results for steady-state simulation tools:</dt><dd><ul>
 <li><dl class="simple">
 <dt>Upload a single file named <code class="docutils literal notranslate"><span class="pre">&lt;participant_id&gt;_&lt;YYYYMMDD&gt;_wtg_response_steady_state.txt</span></code></dt><dd><ul>
-<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/9ad085e6f22a662d2b0b2efb016b75d8/template_YYYYMMDD_wtg_response_steady_state.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
+<li><p>A template for this file can be downloaded <a class="reference download internal" download="" href="_downloads/0bcdffde5b8f904f990cfd33d26b93e4/template_YYYYMMDD_wtg_response_steady_state.txt"><code class="xref download docutils literal notranslate"><span class="pre">here</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;YYYYMMDD&gt;</span></code> is the file submission date</p></li>
 <li><p>File shall have two columns: variable name, variable value</p></li>
 <li><p>Requested variables are the same as those requested for the time-stepping tools, and their value set to NaN (not -999.0) when model cannot simulate them</p></li>
@@ -318,7 +318,7 @@ For additional quantities of interest, the simulated values are compared to the 
       &copy;2018, Paula Doubrawa.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
