@@ -1,11 +1,11 @@
 {
   "type": "floris_input",
-  "name": "floris_input_file_Example",
-  "description": "Example FLORIS Input file",
+  "name": "V27_v3",
+  "description": "V27 model based on OpenFAST-simulated model (v3) performance",
   "farm": {
     "type": "farm",
-    "name": "farm_example_2x2",
-    "description": "Example 2x2 Wind Farm",
+    "name": "SWiFT",
+    "description": "nearly-neutral conditions",
     "properties": {
       "wind_speed": 8.7,
       "wind_direction": 270.0,
@@ -34,43 +34,43 @@
       "generator_efficiency": 1.0,
       "power_thrust_table": {
         "power": [
-          0.4896,
-          0.4894,
-          0.4892,
-          0.4892,
-          0.4890,
-          0.4886,
-          0.4784,
-          0.4569,
-          0.4285
+            0.4896,
+            0.4894,
+            0.4892,
+            0.4892,
+            0.4890,
+            0.4886,
+            0.4784,
+            0.4569,
+            0.4285
         ],
         "thrust": [
-          0.8192,
-          0.8189,
-          0.8189,
-          0.8188,
-          0.8184,
-          0.8098,
-          0.7519,
-          0.6909,
-          0.6292
+            0.8192,
+            0.8189,
+            0.8189,
+            0.8188,
+            0.8184,
+            0.8098,
+            0.7519,
+            0.6909,
+            0.6292
         ],
         "wind_speed": [
-          3.0000,
-          4.0000,
-          5.0000,
-          6.0000,
-          7.0000,
-          8.0000,
-          9.0000,
-          10.0000,
-          11.0000
+            3.0000,
+            4.0000,
+            5.0000,
+            6.0000,
+            7.0000,
+            8.0000,
+            9.0000,
+            10.0000,
+            11.0000
         ]
       },
       "blade_pitch": 0.0,
       "yaw_angle": 0.0,
       "tilt_angle": 0.0,
-      "TSR": 0.0
+      "TSR": 8.0
     }
   },
   "wake": {
