@@ -1,4 +1,11 @@
+# data files
+*.npz
+*.mat
+
 # output files
 *.png
 *.csv
-*.npz
+
+# temp files
+.ipynb_checkpoints
+.DS_Store
