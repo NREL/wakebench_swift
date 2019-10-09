@@ -15,6 +15,10 @@ class MyFlorisInterface(object):
         self.flor.farm.flow_field.reinitialize_flow_field(**kwargs)
         self.flor.farm.flow_field.calculate_wake()
 
+    def get_Cp_Ct(self):
+        turbine = self.flor.farm.turbine_map.turbines[0]
+        return turbine.Cp, turbine.Ct
+
     def get_power_thrust(self):
         turbine = self.flor.farm.turbine_map.turbines[0]
 
@@ -31,7 +35,7 @@ class MyFlorisInterface(object):
             / 1000
 
         # Rotor aerodynamic thrust
-        cttmp = turbine.Ct #Note Cp is also now based on yaw effective velocity
+        cttmp = turbine.Ct
         thrust_kN =  0.5 * turbine.air_density * (np.pi * turbine.rotor_radius**2) \
             * cttmp * yaw_effective_velocity**2 \
             / 1000
