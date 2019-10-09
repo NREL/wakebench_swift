@@ -31,7 +31,7 @@
       "blade_count": 3,
       "pP": 1.88,
       "pT": 1.88,
-      "generator_efficiency": 1.0,
+      "generator_efficiency": 0.96349,
       "power_thrust_table": {
         "power": [
             0.4896,
