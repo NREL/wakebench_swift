@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lessons &#8212; SWiFT Benchmarks  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Measurements" href="measurements.html" />
+    <link rel="prev" title="Timeline" href="timeline.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lessons">
+<span id="id1"></span><h1>Lessons<a class="headerlink" href="#lessons" title="Permalink to this headline">¶</a></h1>
+<p>In addition to the model validation results and conclusion (which are pending review for journal publication), the definition and execution of the SWiFT benchmarks yielded several lessons which should be taken into account in future benchmarks:</p>
+<p><strong>Recommendations for successful model validation benchmarks</strong></p>
+<ul class="simple">
+<li><p>Perform the entire exercise in house before releasing it to outside participants;</p></li>
+<li><p>Enforce comparibility in the simulation setup across participants by requiring minimum spatial and temporal discretization, simulation length, spin up time, and domain size when applicable;</p></li>
+<li><p>For validation exercises focusing on the turbine response and wake, consider generating the turbulent inflow in house and providing the flow fields to all modelers so that differences in inflow won’t affect turbine model/wake model performance analyses;</p></li>
+<li><dl class="simple">
+<dt>When releasing the exercise to the public:</dt><dd><ul>
+<li><dl class="simple">
+<dt>Define a clear sequence of events. The preferred framework is composed of three phases: calibration, blind comparison, iteration:</dt><dd><ul>
+<li><p>Calibration phase: provides opportunity for modelers to blindly calibrate their models and iterate on their solution;</p></li>
+<li><p>Blind comparison phase: results from different models are inter-compared without releasing the measurement data;</p></li>
+<li><p>Iteration: modelers can improve their model or simulation setup after having seen model-measurement comparison.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Provide a consistent reference (github and/or webpage) that participants can always go to for latest information. Keep a timeline of events in this reference page. Keep this page up-to-date.</p></li>
+<li><p>Provide an easy-to-use code (e.g. python script) that takes the model output of each participant and ensures that it meets the needs of the benchmark organizers. This will minimize the time spent debugging issues with specific data files that do not conform to required specifications and e-mail communication required to address errors made by modelers when preparing their data and uploading it.</p></li>
+<li><p>Require that modelers provide timestamps in the file names of each file that they submit, and that the timestamp follow a specific and consistent format, e.g. YYYY_MM_DD;</p></li>
+<li><p>Define a consistent and unambiguous coordinate system to be used;</p></li>
+<li><p>For diagnostic variables (e.g. turbulence kinetic energy) or variables that require normalization (e.g. thrust coefficient) be explicit and unambiguous on how they should be computed.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SWiFT Benchmarks</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="timeline.html">Timeline</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lessons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="measurements.html">Measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simulations.html">Benchmark Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submissions.html">What to submit?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="swift_neutral_evolution.html">Neutral Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="swift_stable_evolution.html">Stable Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="swift_unstable_dynamics.html">Unstable Benchmark</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation.html">Validation Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="timeline.html" title="previous chapter">Timeline</a></li>
+      <li>Next: <a href="measurements.html" title="next chapter">Measurements</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Paula Doubrawa.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/lessons.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

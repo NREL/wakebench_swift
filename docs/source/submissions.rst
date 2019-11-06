@@ -20,7 +20,7 @@ Please go to :ref:`Benchmark Simulations <simulations>` for detailed information
 - Wind turbine response to the inflow (1 file)
 - Total of 3 files
 
-**Benchmarks Phase 2: Blind Comparison**
+**Benchmarks Phase 2: Blind Comparison (COMPLETED)**
 
 **Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
 
@@ -29,7 +29,7 @@ Please go to :ref:`Benchmark Simulations <simulations>` for detailed information
 - Wind turbine response to the inflow (1 file)
 - Total of 11 files
 
-**Benchmarks Phase 3: Iteration**
+**Benchmarks Phase 3: Iteration (COMPLETED)**
 
 **Please keep results for each benchmark separate, in folders called neutral, unstable and stable.**
 

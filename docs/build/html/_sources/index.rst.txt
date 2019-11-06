@@ -3,20 +3,11 @@
 The SWiFT Benchmarks
 ====================
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| To participate, `sign up here <https://goo.gl/forms/cCMnRHAkXQ6VNm3c2>`_!                                                                                    |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Questions? Use `this forum <https://wind.nrel.gov/forum/wind/viewforum.php?f=43>`_.                                                                          |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| For more data/info, go to the `GitHub repository <https://github.com/NREL/wakebench_swift>`_.                                                                |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| :download:`Download <../../supporting_material/benchmarks_release.pdf>` the release slides!                                                                  |
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
 .. toctree::
    :hidden:
 
    timeline
+   lessons
    measurements
    simulations
    submissions
@@ -25,6 +16,9 @@ The SWiFT Benchmarks
    swift_unstable_dynamics
    validation
    glossary
+
+The blind comparison exercise has now been completed, and the results submitted for publication. For more data/info, go to the `GitHub repository <https://github.com/NREL/wakebench_swift>`_. For past presentations, consult :ref:`timeline`. **If you are planning a benchmark, check out** :ref:`lessons`.
+
 
 .. figure:: ../../images/swift_sunrise.jpg
   :align: center
@@ -77,11 +71,6 @@ Data Accessibility
 ------------------
 
 The benchmark is open to all participants of the International Energy Agency (IEA) Wind Task 31.
-
-FAQ
----
-
-Please post your questions regarding the SWiFT Benchmarks to `this forum <https://wind.nrel.gov/forum/wind/viewforum.php?f=43>`_.
 
 
 References

@@ -3,7 +3,7 @@
 Timeline
 ========
 
-~~The dates below are tentative. Invites will be sent out prior to each meeting, confirming the dates below and informing the time and location.~~
+This benchmark exercise is now complete. Final results were submitted for publication in November 2019 and are currently under review.
 
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 | Date                  | Milestone                                                                                                                                 |
